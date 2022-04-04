@@ -24,5 +24,9 @@ fi
 
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
 
+#FZF-BASH-COMPLETION PLUGIN
+source ~/fzf-tab-completion/bash/fzf-bash-completion.sh
+bind -x '"\t": fzf_bash_completion'
+
 #ALIAS FOR DOTFILES BARE REPO
 alias dotfiles='/usr/bin/git --git-dir=/home/rfegles/.dotfiles --work-tree=/home/rfegles'
