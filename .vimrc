@@ -4,11 +4,15 @@ Plug 'reedes/vim-pencil'
 Plug 'junegunn/fzf'
 Plug 'junegunn/fzf.vim'
 Plug 'junegunn/vim-plug'
+" COLORSCHEMES
+Plug 'vim-scripts/oceandeep'
 call plug#end()
 
 " PERSONAL SETTINGS
 filetype plugin indent on
 set fileformat=unix "Use Unix file format
+set t_Co=256 "Use 256 color terminal
+set background=dark "dark background
 colorscheme elflord "Color Scheme
 set hidden "Enable hidden buffers
 set ignorecase "Ignore case when searching
