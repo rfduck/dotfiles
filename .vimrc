@@ -5,6 +5,7 @@ Plug 'junegunn/fzf'
 Plug 'junegunn/fzf.vim'
 Plug 'junegunn/vim-plug'
 " COLORSCHEMES
+Plug 'vim-scripts/CSApprox' "Make all colorschemes work in terminal
 Plug 'vim-scripts/oceandeep'
 call plug#end()
 
