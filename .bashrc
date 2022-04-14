@@ -24,6 +24,9 @@ fi
 
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
 
+#CONCURRENT DOWNLOADS FOR ZYPPER ON OPENSUSE
+export ZYPP_MEDIANETWORK=1
+
 #FZF-BASH-COMPLETION PLUGIN
 source ~/fzf-tab-completion/bash/fzf-bash-completion.sh
 bind -x '"\t": fzf_bash_completion'
