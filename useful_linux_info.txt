@@ -13,7 +13,18 @@ pwd: Print Working Directory
 
 inxi: System information
 feh: Image viewer
+find: Search file system contents
 fzf: Fuzzy-find anything on bash
 fzf-tab-completion: Make bash use fzf for tab completion
+
+git: Version control
+Typical git workflow:
+git init: Initialize git repo in folder
+git add: Add file to be commited
+git commit -m "message": Commit files to repo, with message
+git push -u origin master: Push repo changes to git repo on cloud (Github, etc.). Substitute 'master' for actual name of branch
+
+grep: Search file content
+tmux: Terminal multiplexer (multiple terminals in one window)
 
 # ALIASES
