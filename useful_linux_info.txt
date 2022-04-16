@@ -1,0 +1,19 @@
+# BASH
+
+Ctrl+l: Clear screen
+
+cd: Change directory; also command to go directly to $HOME 
+. : Current directory
+.. : Parent directory
+~ : Home directory 
+pwd: Print Working Directory
+
+
+# TERMINAL PROGRAMS
+
+inxi: System information
+feh: Image viewer
+fzf: Fuzzy-find anything on bash
+fzf-tab-completion: Make bash use fzf for tab completion
+
+# ALIASES
