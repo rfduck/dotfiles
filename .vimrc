@@ -7,9 +7,10 @@ if empty(glob(data_dir . '/autoload/plug.vim'))
 endif
 "
 call plug#begin('~/.vim/plugged')
-Plug 'reedes/vim-pencil'
 Plug 'junegunn/fzf'
 Plug 'junegunn/fzf.vim'
+Plug 'vifm/vifm.vim'
+Plug 'reedes/vim-pencil'
 Plug 'junegunn/vim-plug'
 " COLORSCHEMES
 Plug 'vim-scripts/CSApprox' "Make all colorschemes work in terminal
