@@ -4,8 +4,12 @@
 #alias command="second command" 
 
 #SHELL ALIASES
+alias .1="cd .." #Go up one level
+alias .2="cd ../.." #Go up two levels
+alias .3="cd ../../../" #Go up three levels
 alias cl="clear" #clear the screen
 alias eject="eject -T" #Make 'eject' command into a toggle
+alias ll="ls -lahF --group-directories-first" #Long listing, all files, human readable, directories first
 alias sls="ls -ahF -1 --group-directories-first | less" #Simple directory and file list, nothing hidden 
 
 
@@ -31,3 +35,8 @@ alias fhr="feh -qzZFY &" #Feh Fullscreen Random
 alias useful="less ~/useful_linux_info.txt" #View the useful Linux info
 alias vc=". ~/Documents/vc.sh" #Run vc.sh
 alias vcd=". ~/Documents/vcd.sh" #Run vcd.sh
+
+#OPENSUSE ZYPPER ALIASES
+alias zdup="sudo zypper dup" #Update OpenSuse Tumbleweed
+alias zr="sudo zypper ref" #Refresh Repositories on OpenSuse
+alias zi="sudo zypper in" #Install package on OpenSuse
