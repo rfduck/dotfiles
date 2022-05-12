@@ -14,7 +14,7 @@ alias sls="ls -ahF -1 --group-directories-first | less" #Simple directory and fi
 
 
 #SHUFFLE ALIASES
-alias rnd="echo -e 'You can randomize \n Anthony Bourdain (ab) \n Albums (album) \n Fidget Spinners (fidget) \n Movies (film) \n Photo books (photobook) \n 1001 albums you must hear (thousand)'"
+alias rnd="echo -e 'You can randomize \n Anthony Bourdain (ab) \n Albums (album) \n Coin Flip (flip) \n Fidget Spinners (fidget) \n Movies (film) \n Photo books (photobook) \n 1001 albums you must hear (thousand)'"
 ####
 alias ab="shuf -n 1 '/mnt/d/GDrive/Documents/Files/Bourdain All.txt'" #Shuffle a Bourdain episode
 alias album="shuf -n 1 '/mnt/d/GDrive/Documents/Files/Russ albums.txt'" #Shuffle an album
