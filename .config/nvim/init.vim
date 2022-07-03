@@ -16,6 +16,7 @@ set fileformat=unix "Use Unix file format
 set t_Co=256 "Use 256 color terminal
 set background=dark "dark background
 colorscheme elflord "Color Scheme
+set clipboard+=unnamed,unnamedplus 
 set hidden "Enable hidden buffers
 set ignorecase "Ignore case when searching
 set incsearch "Incremental searching on
@@ -51,9 +52,6 @@ inoremap <BS> <ESC>
 "Remap for jj instead of Esc in Insert Mode
 inoremap jj <Esc>
 
-"Remap for CtrlP (currently off)
-"nnoremap <leader>cp :CtrlP D:\GDrive\Documents <CR> 
- 
 "Remap for Inserting blank space above:
 nnoremap <leader>P O<ESC>j
  
@@ -80,6 +78,9 @@ nnoremap <leader>w <C-W>
  
 "Remap for Pasting from Clipboard
 nnoremap <F2> "*p
+
+"Remap for returning to Normal mode in Nvim Terminal
+:tnoremap <Esc> <C-\><C-n>
 
 "Remap for switching buffers quickly
 nnoremap <leader>bf :ls<CR>:b<SPACE>
