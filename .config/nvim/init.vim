@@ -12,7 +12,7 @@ call plug#end()
 
 " PERSONAL SETTINGS
 filetype plugin indent on
-set fileformat=unix "Use Unix file format
+"set fileformat=unix "Use Unix file format
 set t_Co=256 "Use 256 color terminal
 set background=dark "dark background
 colorscheme elflord "Color Scheme
@@ -49,9 +49,6 @@ let mapleader = ","
 "Turn off Backspace in insert mode
 inoremap <BS> <ESC>
 
-"Remap for jj instead of Esc in Insert Mode
-inoremap jj <Esc>
-
 "Remap for Inserting blank space above:
 nnoremap <leader>P O<ESC>j
  
@@ -67,6 +64,9 @@ inoremap <a <a href=""></a><ESC>2F"
 "Remap for Inserting URL tag in Normal Mode
 nnoremap <leader>ht i<a href=""></a><ESC>2F"
  
+"Remap for jj instead of Esc in Insert Mode
+inoremap jj <Esc>
+
 "Remap for Leader-b instead of ^ for beginning of line
 nnoremap <leader>b ^
  
@@ -80,7 +80,10 @@ nnoremap <leader>w <C-W>
 nnoremap <F2> "*p
 
 "Remap for returning to Normal mode in Nvim Terminal
-:tnoremap <Esc> <C-\><C-n>
+tnoremap <Esc> <C-\><C-n>
+
+"Remap to source myvimrc
+nnoremap <leader>sm :source $MYVIMRC<CR>
 
 "Remap for switching buffers quickly
 nnoremap <leader>bf :ls<CR>:b<SPACE>
@@ -96,14 +99,16 @@ nnoremap <ENTER> :w! <CR>
 "Leader <a: Insert URL tag in Insert mode 
 "Leader b: Beginning of line
 "Leader bf: Switch buffers
-"Leader cp: Ctrlp in Documents
 "Leader d: Insert divider
 "Leader e: End of line
+"Leader hf: Fuzzy find my Home files 
 "Leader ht: Insert HTML tag
+"Leader mf: FuzzyFind my D drive
 "Leader n: Navigate to Notes Folder
 "Leader p: Put blank line below
 "Leader P: Put blank line above
 "Leader rd: Navigate to Russ Documents
+"Leader sm: Source myvimrc 
 "Leader tm: Navigate to Tempoary directory
 "Leader w: Ctrl-w
 
@@ -128,3 +133,16 @@ cnoremap <leader>tm  /mnt/d/GDrive/Temporary
 :ab ,n /mnt/d/GDrive/Docuemnts/Notes/
 "D:\GDrive\Documents\Notes\
 
+"""""""""""""""""""""""
+
+"FZF FUNCTIONS
+
+"Fuzzyfind my D drive 
+command! -bang MyFiles call fzf#vim#files('/mnt/d', {'options': ['--preview', 'cat {}']},<bang>0) 
+"shortcut for MyFiles:
+nnoremap <leader>mf :MyFiles!<CR> 
+
+"Fuzzyfind my Home files
+command! -bang HomeFiles call fzf#vim#files('~', {'options': ['--preview', 'cat {}']}, <bang>0) 
+"Shortcut for HomeFiles:
+nnoremap <leader>hf :HomeFiles!<CR>
