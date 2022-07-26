@@ -14,6 +14,7 @@ uname: Display basic system information
 
 # TERMINAL PROGRAMS
 
+column: Format terminal information into columns
 inxi: System information
 feh: Image viewer
 find: Search file system contents
