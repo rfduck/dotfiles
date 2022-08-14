@@ -12,7 +12,7 @@ pwd: Print Working Directory
 uname: Display basic system information
 
 
-# TERMINAL PROGRAMS
+# TERMINAL PROGRAMS AND COMMAND EXAMPLES
 
 column: Format terminal information into columns
 inxi: System information
@@ -29,12 +29,20 @@ git commit -m "message": Commit files to repo, with message
 git push -u origin master: Push repo changes to git repo on cloud (Github, etc.). Substitute 'master' for actual name of branch
 
 grep: Search file content
-tmux: Terminal multiplexer (multiple terminals in one window)
+
+mount: mount a disk or device
+Step 1: Create directory to mount the device to, or use existing one
+Step 2: Look up name of device using sudo blkid or lsblk (example: /dev/sdc1)
+Step 3: sudo mount /dev/name /mount/directory
+Step 4: To unmount, use sudo umount /dev/name
 
 shuf: Shuffle input and write result to standard output
 Examples:
 *Shuffle file and select top result: shuf -n 1 FILENAME
 *Shuffle input and select top result: shuf -n 1 -e 'option1' 'option2' 'option3'
 *Select random number from range: shuf -n 1 -i 1-500
+
+
+tmux: Terminal multiplexer (multiple terminals in one window)
 
 # ALIASES
