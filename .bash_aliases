@@ -35,8 +35,8 @@ alias bsm="less ~/Documents/Bismuth_Tiling_Shortcuts.txt " #See Bismuth shortcut
 alias fhr="feh -qzZFY &" #Feh Fullscreen Random
 alias nv="nvim" #Make nvim command shorter
 alias useful="less ~/useful_linux_info.txt" #View the useful Linux info
-alias vc=". ~/Documents/vc.sh" #Run vc.sh
-alias vcd=". ~/Documents/vcd.sh" #Run vcd.sh
+alias vc=". ~/Documents/Scripts/vc.sh" #Run vc.sh
+alias vcd=". ~/Documents/Scripts/vcd.sh" #Run vcd.sh
 
 #OPENSUSE ZYPPER ALIASES
 alias zdup="sudo zypper dup" #Update OpenSuse Tumbleweed
