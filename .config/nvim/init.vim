@@ -126,13 +126,20 @@ cnoremap <leader>tm  /mnt/d/GDrive/Temporary
 "D:\GDrive\Temporary\
 
 "Abbreviate My Documents
-:ab ,r /mnt/d/GDrive/Docuemnts/
+:ab ,r /mnt/d/GDrive/Documents/
 "D:\GDrive\Documents\
  
 "Abbreviate Notes
-:ab ,n /mnt/d/GDrive/Docuemnts/Notes/
+:ab ,n /mnt/d/GDrive/Documents/Notes/
 "D:\GDrive\Documents\Notes\
-
+"
+"Capitalize OK
+:ab ok OK
+:ab Ok OK
+:ab Ok, OK,
+:ab ok, OK,
+:ab Ok. OK.
+:ab ok. OK.
 """""""""""""""""""""""
 
 "FZF FUNCTIONS
