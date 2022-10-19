@@ -3,6 +3,7 @@ call plug#begin('~/.config/nvim/plugged')
 Plug 'junegunn/fzf' "Fuzzy Finder plugin
 Plug 'junegunn/fzf.vim' "Fuzzy Finder plugin
 Plug 'junegunn/goyo.vim' "Distraction-free writing environment
+Plug 'junegunn/limelight.vim' "Highlight only current paragraph
 Plug 'vifm/vifm.vim' "Vifm file manager plugin
 Plug 'reedes/vim-pencil' "Make Vim better for writing
 Plug 'junegunn/vim-plug' "Plugin manager
@@ -16,7 +17,8 @@ filetype plugin indent on
 "set fileformat=unix "Use Unix file format
 set t_Co=256 "Use 256 color terminal
 set background=dark "dark background
-colorscheme elflord "Color Scheme
+"colorscheme elflord "Color Scheme
+colorscheme habamax
 set clipboard+=unnamed,unnamedplus 
 set hidden "Enable hidden buffers
 set ignorecase "Ignore case when searching
@@ -142,6 +144,22 @@ cnoremap <leader>tm  /mnt/d/GDrive/Temporary
 :ab Ok. OK.
 :ab ok. OK.
 """""""""""""""""""""""
+"PLUGIN SETTINGS
+
+"LIMELIGHT
+
+"START LIMELIGHT WITH GOYO
+autocmd! User GoyoEnter Limelight
+autocmd! User GoyoLeave Limelight!
+
+"MAKE DEFAULT SETTING 0.5
+let g:limelight_default_coefficient = 0.5
+
+"SET FOREGROUND COLOR FOR INCOMPATIBLE SCHEMES
+"let g:limelight_conceal_ctermfg = 'black'
+
+""""""""""""""""""
+"FZF
 
 "FZF FUNCTIONS
 
