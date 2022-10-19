@@ -7,11 +7,13 @@ if empty(glob(data_dir . '/autoload/plug.vim'))
 endif
 "
 call plug#begin('~/.vim/plugged')
-Plug 'junegunn/fzf'
-Plug 'junegunn/fzf.vim'
-Plug 'vifm/vifm.vim'
-Plug 'reedes/vim-pencil'
-Plug 'junegunn/vim-plug'
+Plug 'junegunn/fzf' "Fuzzy Finder plugin
+Plug 'junegunn/fzf.vim' "Fuzzy Finder plugin
+Plug 'junegunn/goyo.vim' "Distraction-free writing environment
+Plug 'vifm/vifm.vim' "Vifm file manager plugin
+Plug 'reedes/vim-pencil' "Make Vim better for writing
+Plug 'junegunn/vim-plug' "Plugin manager
+
 " COLORSCHEMES
 Plug 'vim-scripts/CSApprox' "Make all colorschemes work in terminal
 Plug 'vim-scripts/oceandeep'
@@ -134,15 +136,20 @@ cnoremap <leader>tm  /mnt/d/GDrive/Temporary
 :ab ,n /mnt/d/GDrive/Docuemnts/Notes/
 "D:\GDrive\Documents\Notes\
 
-"PLUGIN SETTINGS 
-"
-"CtrlP Settings
-"let g:ctrlp_clear_cache_on_exit = 0
-"let g:ctrlp_working_path_mode = 0
-"let g:ctrlp_extensions = ['dir']
-"let g:ctrlp_by_filename = 1
-
+"PLUGIN SETTINGS
 
 "Vim-Session Settings
 "let g:session_directory = 'D:\GDrive\Documents\Vim Session"s'
 "let g:session_autosave = 'no'
+
+"FZF FUNCTIONS
+
+"Fuzzyfind my D drive 
+command! -bang MyFiles call fzf#vim#files('/mnt/d', {'options': ['--preview', 'cat {}']},<bang>0) 
+"shortcut for MyFiles:
+nnoremap <leader>mf :MyFiles!<CR> 
+
+"Fuzzyfind my Home files
+command! -bang HomeFiles call fzf#vim#files('~', {'options': ['--preview', 'cat {}']}, <bang>0) 
+"Shortcut for HomeFiles:
+nnoremap <leader>hf :HomeFiles!<CR>
