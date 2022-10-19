@@ -1,10 +1,11 @@
 "Vim-Plug Plugin Manager
 call plug#begin('~/.config/nvim/plugged')     
-Plug 'junegunn/fzf'
-Plug 'junegunn/fzf.vim'
-Plug 'vifm/vifm.vim'
-Plug 'reedes/vim-pencil'
-Plug 'junegunn/vim-plug'
+Plug 'junegunn/fzf' "Fuzzy Finder plugin
+Plug 'junegunn/fzf.vim' "Fuzzy Finder plugin
+Plug 'junegunn/goyo.vim' "Distraction-free writing environment
+Plug 'vifm/vifm.vim' "Vifm file manager plugin
+Plug 'reedes/vim-pencil' "Make Vim better for writing
+Plug 'junegunn/vim-plug' "Plugin manager
 " COLORSCHEMES
 Plug 'vim-scripts/CSApprox' "Make all colorschemes work in terminal
 Plug 'vim-scripts/oceandeep'
