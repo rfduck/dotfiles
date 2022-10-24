@@ -499,3 +499,9 @@ nnoremap <c-u> <c-w>x
 "     vifm --server-name "$VIFM_SERVER_NAME" --remote +"cd '$PWD'"
 "
 " let $VIFM_SERVER_NAME = v:servername
+"
+" """""""""""""""""""
+"
+" MY CUSTOM FILE RENAMING REMAPS
+"
+comm frf !file-rename -d -v -E 'y/A-Z/a-z/' -E 'y/ /-/' -E 'y/_/-/' *.*
