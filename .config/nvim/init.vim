@@ -17,8 +17,8 @@ filetype plugin indent on
 "set fileformat=unix "Use Unix file format
 set t_Co=256 "Use 256 color terminal
 set background=dark "dark background
-"colorscheme elflord "Color Scheme
-colorscheme habamax
+colorscheme elflord "Color Scheme
+"colorscheme habamax
 set clipboard+=unnamed,unnamedplus 
 set hidden "Enable hidden buffers
 set ignorecase "Ignore case when searching
@@ -156,8 +156,7 @@ autocmd! User GoyoLeave Limelight!
 let g:limelight_default_coefficient = 0.5
 
 "SET FOREGROUND COLOR FOR INCOMPATIBLE SCHEMES
-"let g:limelight_conceal_ctermfg = 'black'
-
+let g:limelight_conceal_ctermfg = 'black'
 """"""""""""""""""
 "FZF
 
