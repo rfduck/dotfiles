@@ -8,6 +8,7 @@ cd: Change directory; also command to go directly to $HOME
 ~ : Home directory 
 eject: eject a CD. Use -t to toggle between open and closed
 lsblk: List all devices on system, including mount points
+nohup: Keep program from closing when terminal closes. nohup PROGRAMNAME &
 pwd: Print Working Directory
 uname: Display basic system information
 
