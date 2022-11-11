@@ -27,7 +27,7 @@ alias rff="cd /mnt/d/GDrive/Documents/Files" #Go to Files directory
 alias bsm="less ~/Documents/bismuth-tiling-shortcuts.txt " #See Bismuth shortcuts
 alias fhr="feh -qzZFY &" #Feh Fullscreen Random
 alias nv="nvim" #Make nvim command shorter
-alias useful="less ~/useful_linux_info.txt" #View the useful Linux info
+alias useful="less ~/useful-linux-info.txt" #View the useful Linux info
 alias vc=". ~/Documents/Scripts/vc.sh" #Run vc.sh
 alias vcd=". ~/Documents/Scripts/vcd.sh" #Run vcd.sh
 
