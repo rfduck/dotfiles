@@ -15,14 +15,7 @@ alias sls="ls -ahF -1 --group-directories-first | less" #Simple directory and fi
 
 
 #SHUFFLE ALIASES
-alias rnd="echo -e 'You can randomize \n Anthony Bourdain (ab) \n Albums (album) \n Coin Flip (flip) \n Fidget Spinners (fidget) \n Movies (film) \n Photo books (photobook) \n 1001 albums you must hear (thousand)'"
-####
-alias ab="shuf -n 1 '/mnt/d/GDrive/Documents/Files/bourdain-all.txt'" #Shuffle a Bourdain episode
-alias album="shuf -n 1 '/mnt/d/GDrive/Documents/Files/russ-albums.txt'" #Shuffle an album
-alias fidget="shuf -n 1 '/mnt/d/GDrive/Documents/Files/fidget-spinners.txt'" #Shuffle a fidget spinner
-alias film="shuf -n 1 '/mnt/d/GDrive/Documents/Files/russ-movies.txt'" #Shuffle a movie
-alias flip="shuf -n 1 -e 'heads' 'tails'" #Coin Flip
-alias photobook="shuf -n 1 '/mnt/d/GDrive/Documents/Files/photobooks.txt'" #Shuffle a photo book
+alias rnd=". ~/Documents/Scripts/random.sh"
 alias thousand="shuf -n 1 '/mnt/d/GDrive/Documents/Files/1001-albums-you-must-hear.txt'" #Shuffle a 1001 album
 
 #NAVIGATION ALIASES
