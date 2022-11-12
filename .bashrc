@@ -27,6 +27,12 @@ fi
 #FZF shortcuts
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
 
+#FZF DEFAULT COMMAND
+export FZF_DEFAULT_COMMAND='find .' 
+
+#FZF ALT-C COMMAND TO CD INTO DIRS
+export FZF_ALT_C_COMMAND='find . $HOME -type d'
+
 #FZF-BASH-COMPLETION PLUGIN
 source ~/fzf-tab-completion/bash/fzf-bash-completion.sh
 bind -x '"\t": fzf_bash_completion'
