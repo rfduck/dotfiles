@@ -1,5 +1,7 @@
 # BASH
 
+Test
+
 Ctrl+l: Clear screen
 
 cd: Change directory; also command to go directly to $HOME 
