@@ -34,8 +34,8 @@ grep: Search file content
 mount: mount a disk or device
 Step 1: Create directory to mount the device to, or use existing one
 Step 2: Look up name of device using sudo blkid or lsblk (example: /dev/sdc1)
-Step 3: sudo mount /dev/name /mount/directory
-Step 4: To unmount, use sudo umount /dev/name
+Step 3: sudo mount /dev/name /mount/directory (-v to confirm device mounted)
+Step 4: To unmount, use sudo umount /dev/name (-v to confirm device unmounted) 
 
 shuf: Shuffle input and write result to standard output
 Examples:
