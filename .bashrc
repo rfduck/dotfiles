@@ -21,15 +21,32 @@ if [ -f ~/.bash_aliases ]; then
     . ~/.bash_aliases
 fi
 
+#PLUGINS AND PROGRAMS
 
+#FZF FUZZY FINDER
+#FZF shortcuts
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
-
-#CONCURRENT DOWNLOADS FOR ZYPPER ON OPENSUSE
-export ZYPP_MEDIANETWORK=1
 
 #FZF-BASH-COMPLETION PLUGIN
 source ~/fzf-tab-completion/bash/fzf-bash-completion.sh
 bind -x '"\t": fzf_bash_completion'
+
+#COMMACD, ENHANCED CD FUNCTION
+source ~/.commacd.sh
+
+#use vifm to navigate directory structure
+vicd()
+{
+    local dst="$(command vifm --choose-dir - "$@")"
+    if [ -z "$dst" ]; then
+        echo 'Directory picking cancelled/failed'
+        return 1
+    fi
+    cd "$dst"
+}
+
+#CONCURRENT DOWNLOADS FOR ZYPPER ON OPENSUSE
+export ZYPP_MEDIANETWORK=1
 
 #ALIAS FOR DOTFILES BARE REPO
 alias dotfiles='git --git-dir=/home/rfegles/.dotfiles --work-tree=/home/rfegles'
