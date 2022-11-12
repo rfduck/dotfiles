@@ -15,7 +15,7 @@ alias sls="ls -ahF -1 --group-directories-first | less" #Simple directory and fi
 
 
 #SHUFFLE ALIASES
-alias rnd=". ~/Documents/Scripts/random.sh"
+alias rnd=". ~/bin/random.sh"
 alias thousand="shuf -n 1 '/mnt/d/GDrive/Documents/Files/1001-albums-you-must-hear.txt'" #Shuffle a 1001 album
 
 #NAVIGATION ALIASES
@@ -27,9 +27,10 @@ alias rff="cd /mnt/d/GDrive/Documents/Files" #Go to Files directory
 alias bsm="less ~/Documents/bismuth-tiling-shortcuts.txt " #See Bismuth shortcuts
 alias fhr="feh -qzZFY &" #Feh Fullscreen Random
 alias nv="nvim" #Make nvim command shorter
+alias scripts="ls -Ah -1 $HOME/bin" 
 alias useful="less ~/useful-linux-info.txt" #View the useful Linux info
-alias vc=". ~/Documents/Scripts/vc.sh" #Run vc.sh
-alias vcd=". ~/Documents/Scripts/vcd.sh" #Run vcd.sh
+alias vc=". ~/bin/vc.sh" #Run vc.sh
+alias vcd=". ~/bin/vcd.sh" #Run vcd.sh
 
 #OPENSUSE ZYPPER ALIASES
 alias zdup="sudo zypper dup" #Update OpenSuse Tumbleweed
