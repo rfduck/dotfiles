@@ -37,7 +37,7 @@ source ~/.commacd.sh
 #use vifm to navigate directory structure
 vicd()
 {
-    local dst="$(command vifm --choose-dir - "$@")"
+    local dst="$(command vifm -c "vs!" --choose-dir - "$@")"
     if [ -z "$dst" ]; then
         echo 'Directory picking cancelled/failed'
         return 1
