@@ -21,8 +21,6 @@ if [ -f ~/.bash_aliases ]; then
     . ~/.bash_aliases
 fi
 
-#USING VI MODE ON COMMAND LINE
-set -o vi
 
 #PLUGINS AND PROGRAMS
 
