@@ -21,6 +21,9 @@ if [ -f ~/.bash_aliases ]; then
     . ~/.bash_aliases
 fi
 
+#USING VI MODE ON COMMAND LINE
+set -o vi
+
 #PLUGINS AND PROGRAMS
 
 #FZF FUZZY FINDER
@@ -38,7 +41,7 @@ source ~/fzf-tab-completion/bash/fzf-bash-completion.sh
 bind -x '"\t": fzf_bash_completion'
 
 #COMMACD, ENHANCED CD FUNCTION
-source ~/.commacd.sh
+source ~/bin/.commacd.sh
 
 #use vifm to navigate directory structure
 vicd()
