@@ -107,6 +107,7 @@ nnoremap <leader>gy :Goyo 40%x50% <CR>
 "Leader bf: Switch buffers
 "Leader d: Insert divider
 "Leader e: End of line
+"Leader gy: Enter Goyo mode
 "Leader hf: Fuzzy find my Home files 
 "Leader ht: Insert HTML tag
 "Leader mf: FuzzyFind my D drive
