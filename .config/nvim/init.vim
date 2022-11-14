@@ -44,7 +44,7 @@ set softtabstop=4 "Soft Tab Stop
 set shiftwidth=4 "Shift Width
 set expandtab "Expand Tab
  
-"MAPPINGS AND ABBREVIATIONS
+"jAPPINGS AND ABBREVIATIONS
 
 "Change Leader to , instead of \
 let mapleader = ","
@@ -93,6 +93,9 @@ nnoremap <leader>bf :ls<CR>:b<SPACE>
 
 "Remap for Writing the document
 nnoremap <ENTER> :w! <CR>
+
+"Remap for entering Goyo mode
+nnoremap <leader>gy :Goyo 40%x50% <CR>
 
  
 "SUMMARY OF LEADER MAPPINGS:
