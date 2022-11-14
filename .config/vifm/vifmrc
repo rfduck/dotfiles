@@ -447,6 +447,8 @@ endif
 nnoremap I cw<c-a>
 nnoremap cc cw<c-u>
 nnoremap A cw
+nnoremap rn :rename <CR>
+vnoremap rn :rename <CR>
 
 " Open console in current directory
 nnoremap ,t :!xterm &<cr>
