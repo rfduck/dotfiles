@@ -11,7 +11,7 @@ alias cl="clear" #clear the screen
 alias eject="eject -T" #Make 'eject' command into a toggle
 alias ll="ls -lahF --group-directories-first" #Long listing, all files, human readable, directories first
 alias scl="cd ~ && clear" #SuperClear: Change to Home directory and clear the screen
-alias sls="ls -ahF -1 --group-directories-first | less" #Simple directory and file list, nothing hidden 
+alias sls="ls -AhF -1 --group-directories-first | less" #Simple directory and file list, nothing hidden 
 
 
 #SHUFFLE ALIASES
