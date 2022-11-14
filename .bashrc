@@ -41,7 +41,7 @@ bind -x '"\t": fzf_bash_completion'
 #COMMACD, ENHANCED CD FUNCTION
 source ~/bin/.commacd.sh
 
-#use vifm to navigate directory structure
+#USE VIFM TO NAVIGATE DIRECTORY STRUCTURE
 vicd()
 {
     local dst="$(command vifm -c "vs!" --choose-dir - "$@")"
@@ -50,6 +50,16 @@ vicd()
         return 1
     fi
     cd "$dst"
+}
+
+#SHORTCUT FUNCTION FOR CHEAT.SH
+cheat () {
+    if [ -z $1 ];
+    then
+        echo "You didn't provide a command!"
+    else
+        curl cheat.sh/$1 | less
+fi
 }
 
 #CONCURRENT DOWNLOADS FOR ZYPPER ON OPENSUSE
