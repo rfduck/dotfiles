@@ -1,3 +1,33 @@
+#PERSONAL ALIASES, SCRIPTS, AND FUNCTIONS:
+
+backup-scripts.sh: Backs up the scripts directory
+bsm: Alias to view my Bismuth Tiling shortcuts
+cheat: Provides cheatsheet for given bash command
+cl: Alias for clear
+commacd: uses , to navigate through filesystem
+dg/dotfiles-git.sh: Runs Git add, commit, push for given filename in the dotfiles git bare repo
+dotfiles: Alias for my dotfiles bare git repo
+eject: Aliased to eject -T for toggle
+fhr: Alias to run feh in fullscreen shuffle mode with no cursor
+gd: Alias to navigate to my Google Drive
+linuxsync.sh: Backs up Home directory to external drive with rsync
+ll: Alias for long ls
+minetestbk.sh: Backs up my Minetest garden
+nv: Alias for neovim
+rfd: Alias to navigate to my Documents on the data HD
+rff: Alias to naviage to my Files on the data HD
+rnd/random.sh: Shell script to randomize various things 
+scl: SuperClear alias. Clears screen and returns to Home directory
+scripts: Alias to see the contents of the scripts/bin directory
+sls: Alias for simple, one-column ls view of everything in directory
+thousand: Alias to shuffle my 1001 albums list and return the top item
+ttyc: Alias for my custom config of tty-clock
+useful: Alias to view this file!
+vicd: Uses vifm to navigate through filesystem
+zdup: Alias to run zypper dup on OpenSUSE Tumbleweed
+zi: Alias to install package on OpenSUSE Tumbleweed
+zr: Alias to refresh zypper repositories on OpenSUSE Tumbleweed
+
 # BASH
 
 Ctrl+l: Clear screen
@@ -46,4 +76,3 @@ Examples:
 
 tmux: Terminal multiplexer (multiple terminals in one window)
 
-# ALIASES
