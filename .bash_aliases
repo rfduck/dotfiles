@@ -31,8 +31,8 @@ alias nv="nvim" #Make nvim command shorter
 alias scripts="ls -Ah -1 $HOME/bin" 
 alias ttyc="tty-clock -bcst -C 6"
 alias useful="less ~/useful-linux-info.txt" #View the useful Linux info
-alias vc=". ~/bin/vc.sh" #Run vc.sh
-alias vcd=". ~/bin/vcd.sh" #Run vcd.sh
+alias vc="sh ~/bin/vc.sh" #Run vc.sh
+alias vcd="sh ~/bin/vcd.sh" #Run vcd.sh
 
 #OPENSUSE ZYPPER ALIASES
 alias zdup="sudo zypper dup" #Update OpenSuse Tumbleweed
