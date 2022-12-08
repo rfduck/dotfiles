@@ -102,6 +102,11 @@ nnoremap <ENTER> :w! <CR>
 "Remap for toggling relative numbers
 nnoremap <leader>rn :setlocal relativenumber! <CR>
 
+"Toggle line and column highlighting at cursor position
+nnoremap <leader>cl :setlocal cursorline! <CR>
+nnoremap <leader>cc :setlocal cursorcolumn! <cr>
+nnoremap <leader>clc :setlocal cursorline! cursorcolumn! <CR>
+
 "Remap for entering Goyo mode
 nnoremap <leader>gy :Goyo 40%x50% <CR>
 
@@ -113,6 +118,9 @@ nnoremap <leader>gy :Goyo 40%x50% <CR>
 "Leader <a: Insert URL tag in Insert mode 
 "Leader b: Beginning of line
 "Leader bf: Switch buffers
+"Leader cl: Toggle cursorline highlighting
+"Leader cc: Toggle cursorcolumn highlighting
+"Leader clc: Toggle both cursorline and cursorcolumn highlighting
 "Leader d: Insert divider
 "Leader e: End of line
 "Leader gy: Enter Goyo mode
@@ -123,6 +131,7 @@ nnoremap <leader>gy :Goyo 40%x50% <CR>
 "Leader p: Put blank line below
 "Leader P: Put blank line above
 "Leader rd: Navigate to Russ Documents
+"Leader rn: Toggle relative line numbers
 "Leader sm: Source myvimrc 
 "Leader tm: Navigate to Tempoary directory
 "Leader w: Ctrl-w
