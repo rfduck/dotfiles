@@ -33,6 +33,8 @@ set printoptions=header:0 "Set Print Options
 set sessionoptions=blank,buffers,curdir,folds,help,resize,tabpages,unix,winsize "Session Options
 set showmode "Show the mode
 set smartcase "Override ignore case when upper case letter is explicitly used
+set splitbelow "splits open below current buffer
+set splitright "splits open to right of current buffer
 set wildmenu "Enhanced command line completion
 set wrap "Set line wrapping
 
@@ -44,7 +46,7 @@ set softtabstop=4 "Soft Tab Stop
 set shiftwidth=4 "Shift Width
 set expandtab "Expand Tab
  
-"jAPPINGS AND ABBREVIATIONS
+"MAPPINGS AND ABBREVIATIONS
 
 "Change Leader to , instead of \
 let mapleader = ","
@@ -93,6 +95,9 @@ nnoremap <leader>bf :ls<CR>:b<SPACE>
 
 "Remap for Writing the document
 nnoremap <ENTER> :w! <CR>
+
+"Remap for toggling relative numbers
+nnoremap <leader>rn :setlocal relativenumber! <CR>
 
 "Remap for entering Goyo mode
 nnoremap <leader>gy :Goyo 40%x50% <CR>
