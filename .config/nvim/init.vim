@@ -45,6 +45,9 @@ set tabstop=8 "Tab Stop
 set softtabstop=4 "Soft Tab Stop
 set shiftwidth=4 "Shift Width
 set expandtab "Expand Tab
+
+"Center screen when using insert mode
+autocmd InsertEnter * norm zz
  
 "MAPPINGS AND ABBREVIATIONS
 
