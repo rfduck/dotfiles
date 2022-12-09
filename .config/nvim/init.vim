@@ -84,6 +84,9 @@ nnoremap <leader>gy :Goyo 40%x50% <CR>
 
 "Remap for Inserting URL tag in Normal Mode
 nnoremap <leader>ht i<a href=""></a><ESC>2F"
+
+"View my vim mappings in a split
+nnoremap <leader>mm :split<CR>>:view ~/Documents/my-vim-mappings.txt<CR>
  
 "Remap for Inserting blank space below:
 nnoremap <leader>p o<ESC>k
@@ -124,6 +127,7 @@ tnoremap <Esc> <C-\><C-n>
 "Leader hf: Fuzzy find my Home files 
 "Leader ht: Insert HTML tag
 "Leader mf: FuzzyFind my D drive
+"Leader mm: Load my vim mapppings in split
 "Leader n: Navigate to Notes Folder
 "Leader p: Put blank line below
 "Leader P: Put blank line above
