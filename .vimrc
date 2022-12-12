@@ -1,5 +1,5 @@
 "Vim-Plug Plugin Manager
-call plug#begin('~/.config/nvim/plugged')     
+call plug#begin('~/.vim/plugged')     
 Plug 'junegunn/fzf' "Fuzzy Finder plugin
 Plug 'junegunn/fzf.vim' "Fuzzy Finder plugin
 Plug 'junegunn/goyo.vim' "Distraction-free writing environment
@@ -11,6 +11,9 @@ Plug 'junegunn/vim-plug' "Plugin manager
 Plug 'vim-scripts/CSApprox' "Make all colorschemes work in terminal
 Plug 'vim-scripts/oceandeep'
 call plug#end()
+
+" VIM 9 SETTINGS
+set wildoptions=pum "Command completion in a popup menu, only for Vim 9+
 
 " PERSONAL SETTINGS
 filetype plugin indent on
