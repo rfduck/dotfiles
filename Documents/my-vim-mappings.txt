@@ -19,8 +19,9 @@
 "Leader n: Navigate to Notes Folder
 "Leader p: Put blank line below
 "Leader P: Put blank line above
-"Leader rd: Navigate to Russ Documents
-"Leader rn: Toggle relative line numbers
+"Leader rfd: Navigate to Russ Documents
+"Leader rff: Navigate to Russ Files
+"Leader rfn: Toggle relative line numbers
 "Leader sm: Source myvimrc 
 "Leader tm: Navigate to Tempoary directory
 "Leader w: Ctrl-w
