@@ -145,23 +145,19 @@ tnoremap <Esc> <C-\><C-n>
 "MY DOCUMENTS
 "
 "Remap for Navigating to Notes Folder
-cnoremap <leader>n /mnt/d/GDrive/Documents/Notes/
+cnoremap <leader>rfn /mnt/d/GDrive/Documents/Notes/
 
 "Remap for Navigating to Russ Documents
-cnoremap <leader>rd /mnt/d/GDrive/Documents/
+cnoremap <leader>rfd /mnt/d/GDrive/Documents/
+
+"Remap for Navigating to Russ Files
+cnoremap <leader>rff /mnt/d/GDrive/Documents/Files/
 
 "Remap for Navigating to Temporary folder
 cnoremap <leader>tm  /mnt/d/GDrive/Temporary
 "D:\GDrive\Temporary\
 
-"Abbreviate My Documents
-:ab ,r /mnt/d/GDrive/Documents/
-"D:\GDrive\Documents\
- 
-"Abbreviate Notes
-:ab ,n /mnt/d/GDrive/Documents/Notes/
-"D:\GDrive\Documents\Notes\
-"
+"ABBREVIATIONS:
 "Capitalize OK
 :ab ok OK
 :ab Ok OK
