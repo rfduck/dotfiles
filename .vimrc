@@ -32,6 +32,7 @@ set nohlsearch "No highlighting on searches
 set nowritebackup "No Backup files
 "set noundofile "No Undo File
 set number "Show line numbers
+set path+=**
 set printoptions=header:0 "Set Print Options
 set sessionoptions=blank,buffers,curdir,folds,help,resize,tabpages,unix,winsize "Session Options
 set showmode "Show the mode
@@ -87,6 +88,9 @@ nnoremap <leader>gy :Goyo 40%x50% <CR>
 
 "Remap for Inserting URL tag in Normal Mode
 nnoremap <leader>ht i<a href=""></a><ESC>2F"
+
+"View my vim mappings in a split
+nnoremap <leader>mm :split<CR>:view ~/Documents/my-vim-mappings.txt<CR>
  
 "Remap for Inserting blank space below:
 nnoremap <leader>p o<ESC>k
@@ -127,6 +131,7 @@ tnoremap <Esc> <C-\><C-n>
 "Leader hf: Fuzzy find my Home files 
 "Leader ht: Insert HTML tag
 "Leader mf: FuzzyFind my D drive
+"Leader mm: Load my vim mappings in split
 "Leader n: Navigate to Notes Folder
 "Leader p: Put blank line below
 "Leader P: Put blank line above
