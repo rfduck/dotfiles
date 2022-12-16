@@ -86,7 +86,7 @@ nnoremap <leader>gy :Goyo 40%x50% <CR>
 nnoremap <leader>ht i<a href=""></a><ESC>2F"
 
 "View my vim mappings in a split
-nnoremap <leader>mm :split<CR>>:view ~/Documents/my-vim-mappings.txt<CR>
+nnoremap <leader>mm :split<CR>:view ~/Documents/my-vim-mappings.txt<CR>
  
 "Remap for Inserting blank space below:
 nnoremap <leader>p o<ESC>k
