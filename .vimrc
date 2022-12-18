@@ -32,7 +32,7 @@ set nohlsearch "No highlighting on searches
 set nowritebackup "No Backup files
 "set noundofile "No Undo File
 set number "Show line numbers
-set path+=**
+set path+=** "Add subdirectories of current directory to path
 set printoptions=header:0 "Set Print Options
 set sessionoptions=blank,buffers,curdir,folds,help,resize,tabpages,unix,winsize "Session Options
 set showmode "Show the mode
@@ -49,7 +49,9 @@ set softtabstop=4 "Soft Tab Stop
 set shiftwidth=4 "Shift Width
 set expandtab "Expand Tab
 
-"MAPPINGS AND ABBREVIATIONS
+"--------MAPPINGS AND ABBREVIATIONS--------
+
+"----MAPPINGS FOR SETTINGS----
 
 "Change Leader to , instead of \
 let mapleader = ","
@@ -77,21 +79,12 @@ nnoremap <leader>cl :setlocal cursorline! <CR>
 nnoremap <leader>cc :setlocal cursorcolumn! <cr>
 nnoremap <leader>clc :setlocal cursorline! cursorcolumn! <CR>
 
-"Remap for Inserting divider:
-nnoremap <leader>d :put='----------------------------------' <CR> o
-
 "Remap for Leader-e instead of $ for end of line
 nnoremap <leader>e $
-
-"Remap for entering Goyo mode
-nnoremap <leader>gy :Goyo 40%x50% <CR>
 
 "Remap for Inserting URL tag in Normal Mode
 nnoremap <leader>ht i<a href=""></a><ESC>2F"
 
-"View my vim mappings in a split
-nnoremap <leader>mm :split<CR>:view ~/Documents/my-vim-mappings.txt<CR>
- 
 "Remap for Inserting blank space below:
 nnoremap <leader>p o<ESC>k
  
@@ -101,20 +94,40 @@ nnoremap <leader>P O<ESC>j
 "Remap for toggling relative numbers
 nnoremap <leader>rn :setlocal relativenumber! <CR>
 
-"Remap to source myvimrc
-nnoremap <leader>sm :source $MYVIMRC<CR>
-
 "Remap for Leader-w instead of Ctrl-w for Window actions
 nnoremap <leader>w <C-W>
  
 "Turn off Backspace in insert mode
 inoremap <BS> <ESC>
 
+
+"----CUSTOM MAPPINGS----
+
+"Remap for Inserting divider:
+nnoremap <leader>d :put='----------------------------------' <CR> o
+
+"View my vim mappings in a split
+nnoremap <leader>mm :split<CR>:view ~/Documents/my-vim-mappings.txt<CR>
+
+"Remap to source myvimrc
+nnoremap <leader>sm :source $MYVIMRC<CR>
+
 "Remap for returning to Normal mode in Nvim Terminal
 tnoremap <Esc> <C-\><C-n>
 
- 
-"SUMMARY OF LEADER MAPPINGS:
+
+"----PLUGIN MAPPINGS----
+
+"Remap for entering Goyo mode
+nnoremap <leader>gy :Goyo 40%x50% <CR>
+
+"Remaps for Vifm file explorer integration
+nnoremap <leader>vf :Vifm<CR> 
+nnoremap <leader>vv :VsplitVifm<CR>
+nnoremap <leader>sv :SplitVifm<CR>
+
+
+"--------SUMMARY OF LEADER MAPPINGS:--------
 " Leader key: ,
 " <ENTER>: :w
 "F2: Paste from clipboard
@@ -138,7 +151,10 @@ tnoremap <Esc> <C-\><C-n>
 "Leader rd: Navigate to Russ Documents
 "Leader rn: Toggle relative line numbers
 "Leader sm: Source myvimrc 
+"Leader sv: Vifm and open in split
 "Leader tm: Navigate to Tempoary directory
+"Leader vf: Vifm and edit file
+"Leader vv: Vifm and open in vertical split
 "Leader w: Ctrl-w
 
 
