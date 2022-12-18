@@ -23,5 +23,8 @@
 "Leader rff: Navigate to Russ Files
 "Leader rfn: Toggle relative line numbers
 "Leader sm: Source myvimrc 
+"Leader sv: Vifm and open in split
 "Leader tm: Navigate to Tempoary directory
+"Leader vf: Vifm and edit file
+"Leader vv: Vifm and open in vertical split
 "Leader w: Ctrl-w
