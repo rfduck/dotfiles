@@ -56,22 +56,22 @@ set expandtab "Expand Tab
 "Change Leader to , instead of \
 let mapleader = ","
  
-"Remap for Writing the document
+"Writing the document
 nnoremap <ENTER> :w! <CR>
 
-"Remap for Pasting from Clipboard
+"Pasting from Clipboard
 nnoremap <F2> "*p
 
-"Remap for jj instead of Esc in Insert Mode
+"jj instead of Esc in Insert Mode
 inoremap jj <Esc>
 
-"Remap for Inserting URL tag in Insert mode
+"Inserting URL tag in Insert mode
 inoremap <a <a href=""></a><ESC>2F"
 
-"Remap for Leader-b instead of ^ for beginning of line
+"Leader-b instead of ^ for beginning of line
 nnoremap <leader>b ^
 
-"Remap for switching buffers quickly
+"Switching buffers quickly
 nnoremap <leader>bf :ls<CR>:b<SPACE>
 
 "Toggle line and column highlighting at cursor position
@@ -79,22 +79,22 @@ nnoremap <leader>cl :setlocal cursorline! <CR>
 nnoremap <leader>cc :setlocal cursorcolumn! <cr>
 nnoremap <leader>clc :setlocal cursorline! cursorcolumn! <CR>
 
-"Remap for Leader-e instead of $ for end of line
+"Leader-e instead of $ for end of line
 nnoremap <leader>e $
 
-"Remap for Inserting URL tag in Normal Mode
+"Inserting URL tag in Normal Mode
 nnoremap <leader>ht i<a href=""></a><ESC>2F"
 
-"Remap for Inserting blank space below:
+"Inserting blank space below:
 nnoremap <leader>p o<ESC>k
  
- "Remap for Inserting blank space above:
+"Inserting blank space above:
 nnoremap <leader>P O<ESC>j
  
-"Remap for toggling relative numbers
+"Toggling relative numbers
 nnoremap <leader>rn :setlocal relativenumber! <CR>
 
-"Remap for Leader-w instead of Ctrl-w for Window actions
+"Leader-w instead of Ctrl-w for Window actions
 nnoremap <leader>w <C-W>
  
 "Turn off Backspace in insert mode
@@ -103,22 +103,22 @@ inoremap <BS> <ESC>
 
 "----CUSTOM MAPPINGS----
 
-"Remap for Inserting divider:
+"Inserting divider:
 nnoremap <leader>d :put='----------------------------------' <CR> o
 
 "View my vim mappings in a split
 nnoremap <leader>mm :split<CR>:view ~/Documents/my-vim-mappings.txt<CR>
 
-"Remap to source myvimrc
+"Source myvimrc
 nnoremap <leader>sm :source $MYVIMRC<CR>
 
-"Remap for returning to Normal mode in Nvim Terminal
+"Returning to Normal mode in Nvim Terminal
 tnoremap <Esc> <C-\><C-n>
 
 
 "----PLUGIN MAPPINGS----
 
-"Remap for entering Goyo mode
+"Entering Goyo mode
 nnoremap <leader>gy :Goyo 40%x50% <CR>
 
 "Remaps for Vifm file explorer integration
