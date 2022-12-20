@@ -46,6 +46,24 @@ uname: Display basic system information
 # TERMINAL PROGRAMS AND COMMAND EXAMPLES
 
 column: Format terminal information into columns
+
+crontab: Schedule cronjobs to run via the cron program. Set the cron job like this:
+
+(In terminal, run crontab -e)
+
+* * * * * commands, task, or script to be run
+a b c d e
+
+a:Minute (0-59)
+b:Hour (0-23)
+c:Day of month (1-31)
+d:Month of year (1-12)
+e:Day of week (0-6) 0 is Sunday
+
+An asterisk means run it every specified time period. To run something every minute, leave all asterisks.
+
+To view the scheduled cronjobs, run crontab -l
+
 inxi: System information
 feh: Image viewer
 find: Search file system contents
