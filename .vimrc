@@ -9,6 +9,7 @@ Plug 'reedes/vim-pencil' "Make Vim better for writing
 Plug 'junegunn/vim-plug' "Plugin manager
 " COLORSCHEMES
 Plug 'vim-scripts/CSApprox' "Make all colorschemes work in terminal
+Plug 'flazz/vim-colorschemes' "Github repo with many different color schemes in one place
 Plug 'vim-scripts/oceandeep'
 call plug#end()
 
@@ -20,7 +21,7 @@ filetype plugin indent on
 "set fileformat=unix "Use Unix file format
 set t_Co=256 "Use 256 color terminal
 set background=dark "dark background
-colorscheme elflord "Color Scheme
+colorscheme archery "Color Scheme
 "colorscheme habamax
 set clipboard+=unnamed,unnamedplus 
 set hidden "Enable hidden buffers
