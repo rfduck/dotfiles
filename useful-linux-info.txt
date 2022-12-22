@@ -10,6 +10,7 @@ dotfiles: Alias for my dotfiles bare git repo
 eject: Aliased to eject -T for toggle
 fhr: Alias to run feh in fullscreen shuffle mode with no cursor
 gd: Alias to navigate to my Google Drive
+km: View keymappings for the keyboard
 linuxsync.sh: Backs up Home directory to external drive with rsync
 ll: Alias for long ls
 minetestbk.sh: Backs up my Minetest garden
