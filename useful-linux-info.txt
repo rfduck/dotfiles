@@ -71,6 +71,9 @@ find: Search file system contents
 fzf: Fuzzy-find anything on bash
 fzf-tab-completion: Make bash use fzf for tab completion
 
+gh: Github CLI program
+To update your personal token, run gh auth login in the proper repo, and paste your updated token copied to clipboard when prompted
+
 git: Version control
 Typical git workflow:
 git init: Initialize git repo in folder
