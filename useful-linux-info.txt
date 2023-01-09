@@ -22,6 +22,8 @@ scl: SuperClear alias. Clears screen and returns to Home directory
 scripts: Alias to see the contents of the scripts/bin directory
 sls: Alias for simple, one-column ls view of everything in directory
 thousand: Alias to shuffle my 1001 albums list and return the top item
+tm: Display time 
+tmd: Display time and date
 ttyc: Alias for my custom config of tty-clock
 useful: Alias to view this file!
 vicd: Uses vifm to navigate through filesystem
