@@ -28,6 +28,7 @@ set hidden "Enable hidden buffers
 set ignorecase "Ignore case when searching
 set incsearch "Incremental searching on
 set linebreak "Set Line Breaks
+set modeline "Enable modeline
 set nobackup "No Backup files
 set nohlsearch "No highlighting on searches
 set nowritebackup "No Backup files
