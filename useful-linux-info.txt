@@ -52,50 +52,69 @@ column: Format terminal information into columns
 
 crontab: Schedule cronjobs to run via the cron program. Set the cron job like this:
 
-(In terminal, run crontab -e)
+    (In terminal, run crontab -e)
 
-* * * * * commands, task, or script to be run
-a b c d e
+    * * * * * commands, task, or script to be run
+    a b c d e
 
-a:Minute (0-59)
-b:Hour (0-23)
-c:Day of month (1-31)
-d:Month of year (1-12)
-e:Day of week (0-6) 0 is Sunday
+    a:Minute (0-59)
+    b:Hour (0-23)
+    c:Day of month (1-31)
+    d:Month of year (1-12)
+    e:Day of week (0-6) 0 is Sunday
 
-An asterisk means run it every specified time period. To run something every minute, leave all asterisks.
+    An asterisk means run it every specified time period. To run something every minute, leave all asterisks.
 
-To view the scheduled cronjobs, run crontab -l
+    To view the scheduled cronjobs, run crontab -l
+
+expr: Evaluate expressions/do math
+    You must use whitespace between each number and escape any special characters with single quotes
+    Example: 20 '*' 5
 
 inxi: System information
+
 feh: Image viewer
+    Flags to use:
+    F: Make feh run in fullscreen
+    n: Reverse the sort order
+    q: Quiet, supress error messages
+    r: Recursively search directories for images to display
+    --start-at : Start at the specified filename
+    S: Sort by (name, filename, dirname, mtime, width, height, pixels, size, format). Use --reverse to reverse the sort order 
+    Y: Hide cursor
+    z: Randomize images
+    Z: Zoom image to full screen
+
+    Press 'd' while in fullscreen mode to display image filename (or use '-d' flag)
+
 find: Search file system contents
 fzf: Fuzzy-find anything on bash
 fzf-tab-completion: Make bash use fzf for tab completion
 
 gh: Github CLI program
-To update your personal token, run gh auth login in the proper repo, and paste your updated token copied to clipboard when prompted
+    To update your personal token, run gh auth login in the proper repo, and paste your updated token copied to clipboard when prompted
 
 git: Version control
-Typical git workflow:
-git init: Initialize git repo in folder
-git add: Add file to be commited
-git commit -m "message": Commit files to repo, with message
-git push -u origin master: Push repo changes to git repo on cloud (Github, etc.). Substitute 'master' for actual name of branch
+    Typical git workflow:
+    git init: Initialize git repo in folder
+    git add: Add file to be commited
+    git commit -m "message": Commit files to repo, with message
+    git push -u origin master: Push repo changes to git repo on cloud (Github, etc.). Substitute 'master' for actual name of branch
 
 grep: Search file content
+    Example: grep "thing you're searching for" filename.txt
 
 mount: mount a disk or device
-Step 1: Create directory to mount the device to, or use existing one
-Step 2: Look up name of device using sudo blkid or lsblk (example: /dev/sdc1)
-Step 3: sudo mount /dev/name /mount/directory (-v to confirm device mounted)
-Step 4: To unmount, use sudo umount /dev/name (-v to confirm device unmounted) 
+    Step 1: Create directory to mount the device to, or use existing one
+    Step 2: Look up name of device using sudo blkid or lsblk (example: /dev/sdc1)
+    Step 3: sudo mount /dev/name /mount/directory (-v to confirm device mounted)
+    Step 4: To unmount, use sudo umount /dev/name (-v to confirm device unmounted) 
 
 shuf: Shuffle input and write result to standard output
-Examples:
-*Shuffle file and select top result: shuf -n 1 FILENAME
-*Shuffle input and select top result: shuf -n 1 -e 'option1' 'option2' 'option3'
-*Select random number from range: shuf -n 1 -i 1-500
+    Examples:
+    *Shuffle file and select top result: shuf -n 1 FILENAME
+    *Shuffle input and select top result: shuf -n 1 -e 'option1' 'option2' 'option3'
+    *Select random number from range: shuf -n 1 -i 1-500
 
 
 tmux: Terminal multiplexer (multiple terminals in one window)
