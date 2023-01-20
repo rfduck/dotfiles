@@ -31,7 +31,7 @@ set linebreak "Set Line Breaks
 set modeline "Enable modeline
 set nobackup "No Backup files
 set nohlsearch "No highlighting on searches
-set nowritebackup "No Backup files
+set writebackup "Make backup before overwriting file  
 "set noundofile "No Undo File
 set number "Show line numbers
 set path+=** "Add subdirectories of current directory to path
