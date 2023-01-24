@@ -211,3 +211,4 @@ bindsym Mod1+k exec --no-startup-id kitty vim /mnt/d/GDrive/Documents/Files/i3-k
 # INFORMATION
 #
 # Dependencies: feh, kitty
+# NETWORKING: Use nmtui to start and configure wireless network
