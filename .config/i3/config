@@ -200,3 +200,6 @@ bar {
 gaps inner 10 px
 gaps outer 5 px
 smart_gaps on
+
+#Wallpaper
+exec_always --no-startup-id feh --bg-fill /mnt/d/GDrive/Pictures/Wallpaper/bergen-sunset.jpg 
