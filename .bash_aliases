@@ -27,6 +27,7 @@ alias rff="cd /mnt/d/GDrive/Documents/Files" #Go to Files directory
 alias bsm="less ~/Documents/bismuth-tiling-shortcuts.txt " #See Bismuth shortcuts
 alias dg="dotfiles-git.sh" #Run dotfiles-git
 alias fhr="feh -qzZFY &" #Feh Fullscreen Random
+alias i3c="vim .config/i3/config" #Opens i3 config in vim
 alias km="less /mnt/d/GDrive/Documents/Files/keychron-k8-pro-keymappings.txt"
 alias nv="nvim" #Make nvim command shorter
 alias scripts="ls -Ah -1 $HOME/bin" 
