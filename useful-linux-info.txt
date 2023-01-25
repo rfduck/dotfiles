@@ -49,6 +49,14 @@ uname: Display basic system information
 
 # TERMINAL PROGRAMS AND COMMAND EXAMPLES
 
+bluetoothctl: Control bluetooth and devices
+    for interactive mode, simply run bluetoothctl
+    power on: turn on bluetooth adapter
+    scan on: Scan for devices
+    discoverable on: Make adapter discoverable
+    pair [MAC address]
+    connect [MAC address]
+
 column: Format terminal information into columns
 
 crontab: Schedule cronjobs to run via the cron program. Set the cron job like this:
