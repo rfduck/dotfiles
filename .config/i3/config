@@ -233,5 +233,5 @@ for_window [class="Fsearch"] floating enable
 
 # INFORMATION
 #
-# Dependencies: feh, kitty, rofi
+# Dependencies: feh, kitty, playerctl, rofi
 # NETWORKING: Use nmtui to start and configure wireless network
