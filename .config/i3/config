@@ -90,6 +90,12 @@ bindsym $mod+Shift+Down move down
 bindsym $mod+Shift+Up move up
 bindsym $mod+Shift+Right move right
 
+#focus parent and move left/right (useful for tabbed layouts)
+bindsym $mod+Mod1+j focus parent; focus left
+bindsym $mod+Mod1+Left focus parent; focus left
+bindsym $mod+Mod1+semicolon focus parent; focus right
+bindsym $mod+Mod1+Right exec focus parent; focus right
+
 # split in horizontal orientation
 bindsym $mod+h split h
 
