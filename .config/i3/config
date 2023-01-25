@@ -231,6 +231,21 @@ bindsym Mod1+k exec --no-startup-id kitty vim /mnt/d/GDrive/Documents/Files/i3-k
 bindsym Mod1+f exec --no-startup-id flatpak run io.github.cboxdoerfer.FSearch
 for_window [class="Fsearch"] floating enable
 
+# POWER MENU
+set $mode_system System (l) lock, (e) logout, (s) suspend, (r) reboot, (u) shutdown
+mode "$mode_system" {
+    bindsym l exec --no-startup-id i3lock, mode "default"
+    bindsym e exec --no-startup-id i3-msg exit, mode "default"
+    bindsym s exec --no-startup-id systemctl suspend, mode "default"
+    bindsym r exec --no-startup-id systemctl reboot, mode "default"
+    bindsym u exec --no-startup-id systemctl poweroff, mode "default"
+
+    # back to normal: Enter or Escape
+    bindsym Return mode "default"
+    bindsym Escape mode "default"
+}
+bindsym $mod+Home mode "$mode_system"
+
 # INFORMATION
 #
 # Dependencies: feh, kitty, playerctl, rofi
