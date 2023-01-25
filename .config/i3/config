@@ -215,6 +215,9 @@ exec_always --no-startup-id feh --bg-fill /mnt/d/GDrive/Pictures/Wallpaper/berge
 # MY CUSTOM KEYBOARD SHORCUTS
 bindsym Mod1+k exec --no-startup-id kitty vim /mnt/d/GDrive/Documents/Files/i3-keyboard-shortcuts.txt
 
+bindsym Mod1+f exec --no-startup-id flatpak run io.github.cboxdoerfer.FSearch
+for_window [class="Fsearch"] floating enable
+
 # INFORMATION
 #
 # Dependencies: feh, kitty, rofi
