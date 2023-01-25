@@ -248,5 +248,5 @@ bindsym $mod+Home mode "$mode_system"
 
 # INFORMATION
 #
-# Dependencies: feh, kitty, playerctl, rofi
+# Dependencies: feh, kitty, playerctl, qt5ct, rofi
 # NETWORKING: Use nmtui to start and configure wireless network
