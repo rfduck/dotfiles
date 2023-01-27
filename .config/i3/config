@@ -206,8 +206,14 @@ bindsym $mod+r mode "resize"
 
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
+#bar {
+#        status_command i3status
+#}
 bar {
-        status_command i3status
+        status_command /usr/bin/bumblebee-status \
+        -m title cpu memory nic amixer playerctl bluetooth2 datetime \
+        -p datetime.format="%a %b %Y %I:%M:%S %p" amixer.percent_change=1% playerctl.hide=true nic.states=up nic.format={state} \
+        -t night-powerline
 }
 
 # Gaps settings
@@ -248,5 +254,5 @@ bindsym $mod+Home mode "$mode_system"
 
 # INFORMATION
 #
-# Dependencies: feh, kitty, lxappearance, nm-applet (NetworkManager-applet), playerctl, qt5ct, rofi
+# Dependencies: blueman, bumblebee-status, feh, kitty, lxappearance, nm-applet (NetworkManager-applet), pamixer, playerctl, qt5ct, rofi
 # NETWORKING: Use nmtui to start and configure wireless network
