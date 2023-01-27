@@ -228,6 +228,9 @@ bindsym $mod+Shift+minus move scratchpad
 # Show the first scratchpad window
 bindsym $mod+minus scratchpad show
 
+#COMPOSITOR
+exec picom -b --config ~/.config/picom/picom.conf
+
 # WALLPAPER
 exec_always --no-startup-id feh --bg-fill /mnt/d/GDrive/Pictures/Wallpaper/bergen-sunset.jpg 
 
@@ -254,5 +257,5 @@ bindsym $mod+Home mode "$mode_system"
 
 # INFORMATION
 #
-# Dependencies: blueman, bumblebee-status, feh, kitty, lxappearance, nm-applet (NetworkManager-applet), pamixer, playerctl, qt5ct, rofi
+# Dependencies: blueman, bumblebee-status, feh, kitty, lxappearance, nm-applet (NetworkManager-applet), pamixer, picom, playerctl, qt5ct, rofi, xwininfo (for picom)
 # NETWORKING: Use nmtui to start and configure wireless network
