@@ -212,7 +212,7 @@ bindsym $mod+r mode "resize"
 bar {
         status_command /usr/bin/bumblebee-status \
         -m title cpu memory nic amixer playerctl bluetooth2 datetime \
-        -p datetime.format="%a %b %Y %I:%M:%S %p" amixer.percent_change=1% playerctl.hide=true nic.states=up nic.format={state} \
+        -p datetime.format="%a %b %-d %Y %I:%M:%S %p" amixer.percent_change=1% playerctl.hide=true nic.states=up nic.format={state} \
         -t night-powerline
 }
 
