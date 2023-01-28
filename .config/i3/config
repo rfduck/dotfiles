@@ -257,5 +257,5 @@ bindsym $mod+Home mode "$mode_system"
 
 # INFORMATION
 #
-# Dependencies: blueman, bumblebee-status, feh, kitty, lxappearance, nm-applet (NetworkManager-applet), pamixer, picom, playerctl, qt5ct, rofi, xwininfo (for picom)
+# Dependencies: blueman, bumblebee-status, feh, kitty, lxappearance, nm-applet (NetworkManager-applet), pamixer, picom, playerctl, qt5ct, redshift-gtk, rofi, xwininfo (for picom)
 # NETWORKING: Use nmtui to start and configure wireless network
