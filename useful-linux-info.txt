@@ -128,3 +128,5 @@ shuf: Shuffle input and write result to standard output
 
 tmux: Terminal multiplexer (multiple terminals in one window)
 
+xprop: X window property viewer
+    To find the class of a window: Run xprop WM_CLASS in a terminal, and then click with your mouse on the window you want to find a class for 
