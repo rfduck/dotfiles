@@ -232,7 +232,7 @@ bindsym $mod+minus scratchpad show
 exec picom -b --config ~/.config/picom/picom.conf
 
 # WALLPAPER
-exec_always --no-startup-id feh --bg-fill /mnt/d/GDrive/Pictures/Wallpaper/bergen-sunset.jpg 
+exec_always --no-startup-id feh --bg-fill /mnt/d/GDrive/Pictures/Wallpaper/abstract-light.jpg
 
 # MY CUSTOM KEYBOARD SHORCUTS
 bindsym Mod1+k exec --no-startup-id kitty vim /mnt/d/GDrive/Documents/Files/i3-keyboard-shortcuts.txt
