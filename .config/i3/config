@@ -228,6 +228,9 @@ bindsym $mod+Shift+minus move scratchpad
 # Show the first scratchpad window
 bindsym $mod+minus scratchpad show
 
+#REDSHIFT NIGHT MODE 
+exec --no-startup-id redshift-gtk
+
 #COMPOSITOR
 exec picom -b --config ~/.config/picom/picom.conf
 
