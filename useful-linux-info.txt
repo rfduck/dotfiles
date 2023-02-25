@@ -110,6 +110,9 @@ git: Version control
     git commit -m "message": Commit files to repo, with message
     git push -u origin master: Push repo changes to git repo on cloud (Github, etc.). Substitute 'master' for actual name of branch
 
+    To list all currently tracked files in repository:
+    git ls-tree --full-tree --name-only -r HEAD
+
 grep: Search file content
     Example: grep "thing you're searching for" filename.txt
 
