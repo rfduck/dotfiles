@@ -248,6 +248,8 @@ bindsym Mod1+k exec --no-startup-id kitty vim /mnt/d/GDrive/Documents/Files/i3-k
 bindsym Mod1+f exec --no-startup-id flatpak run io.github.cboxdoerfer.FSearch
 for_window [class="Fsearch"] floating enable
 
+#MUSIC CURRENTLY PLAYING
+bindsym $mod+Shift+m exec --no-startup-id kitty sh ~/bin/now-playing.sh
 
 # Start XDG autostart .desktop files using dex. See also
 # https://wiki.archlinux.org/index.php/XDG_Autostart
