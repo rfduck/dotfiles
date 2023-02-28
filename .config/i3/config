@@ -70,6 +70,10 @@ bindsym $mod+c focus child
 # move tiling windows via drag & drop by left-clicking into the title bar,
 # or left-clicking anywhere into the window while holding the floating modifier.
 tiling_drag modifier titlebar
+
+# Focus window by moving mouse over window
+focus_follows_mouse no
+
 #}}}
 
 #-----LAYOUTS-----{{{
