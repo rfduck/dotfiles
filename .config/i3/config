@@ -248,6 +248,9 @@ exec --no-startup-id redshift-gtk
 #COMPOSITOR
 exec picom -b --config ~/.config/picom/picom.conf
 
+#BLUETOOTH MANAGER
+exec --no-startup-id blueman-applet
+
 #i3 SHORCUT CHEATSHEET
 bindsym Mod1+k exec --no-startup-id kitty vim /mnt/d/GDrive/Documents/Files/i3-keyboard-shortcuts.txt
 
