@@ -27,6 +27,7 @@ alias rff="cd /mnt/d/GDrive/Documents/Files" #Go to Files directory
 alias bsm="less ~/Documents/bismuth-tiling-shortcuts.txt " #See Bismuth shortcuts
 alias dg="dotfiles-git.sh" #Run dotfiles-git
 alias fhr="feh -qzZFY &" #Feh Fullscreen Random
+alias i3b="vim ~/.config/i3blocks/config" #Opens i3blocks config
 alias i3c="vim ~/.config/i3/config" #Opens i3 config in vim
 alias km="less /mnt/d/GDrive/Documents/Files/keychron-k8-pro-keymappings.txt"
 alias nv="nvim" #Make nvim command shorter
@@ -40,5 +41,6 @@ alias vcd=". ~/bin/vcd.sh" #Run vcd.sh
 
 #OPENSUSE ZYPPER ALIASES
 alias zdup="sudo flatpak update && sudo zypper dup" #Update OpenSuse Tumbleweed and Flatpak
-alias zr="sudo zypper ref" #Refresh Repositories on OpenSuse
 alias zi="sudo zypper in" #Install package on OpenSuse
+alias zr="sudo zypper ref" #Refresh Repositories on OpenSuse
+alias zs="zypper search" #Search zypper for available or installed packages"
