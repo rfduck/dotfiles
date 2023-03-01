@@ -80,7 +80,9 @@ expr: Evaluate expressions/do math
     You must use whitespace between each number and escape any special characters with single quotes
     Example: 20 '*' 5
 
-inxi: System information
+
+fc-list: List all fonts
+    Example: fc-list | grep Arial
 
 feh: Image viewer
     Flags to use:
@@ -121,6 +123,8 @@ mount: mount a disk or device
     Step 2: Look up name of device using sudo blkid or lsblk (example: /dev/sdc1)
     Step 3: sudo mount /dev/name /mount/directory (-v to confirm device mounted)
     Step 4: To unmount, use sudo umount /dev/name (-v to confirm device unmounted) 
+
+inxi: System information
 
 shuf: Shuffle input and write result to standard output
     Examples:
