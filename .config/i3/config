@@ -311,6 +311,14 @@ bar {
 
     colors {
     background #519446
+    statusline #ffffff
+
+    #focused_workspace  #ffffff #285577
+    #Name               Text    Background
+    focused_workspace  #000000 #E7EB49
+    active_workspace   #ffffff #333333
+    inactive_workspace #888888 #222222
+    urgent_workspace   #ffffff #900000
     }
 }
 #bar {
