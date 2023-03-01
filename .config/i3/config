@@ -339,6 +339,7 @@ bar {
 #blueman (GUI program to manage bluetooth connections)
 #bumblebee-status (status bar)
 #feh (image viewer, used to set desktop wallpaper)
+#i3blocks and https://github.com/vivien/i3blocks-contrib
 #kitty (terminal application)
 #lxappearance (GUI program to change gtk application themes)
 #nm-applet (applet to manage network connections) (aka NetworkManger-applet)
