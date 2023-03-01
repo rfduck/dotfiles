@@ -184,7 +184,7 @@ bindsym $mod+Shift+0 move container to workspace number $ws10
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
-font pango:Noto Sans monospace 13
+font pango:Arial Regular 13
 
 
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
@@ -320,6 +320,8 @@ bar {
     inactive_workspace #888888 #222222
     urgent_workspace   #ffffff #900000
     }
+
+    font pango:RobotoMono Nerd Font Regular 13
 }
 #bar {
 #        status_command i3status
