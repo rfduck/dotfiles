@@ -29,11 +29,10 @@ command=$SCRIPT_DIR/$BLOCK_NAME
 separator_block_width=15
 markup=pango
 
+
 [i3-focusedwindow]
 command=$SCRIPT_DIR/i3-focusedwindow/i3-focusedwindow 50
 interval=persist
-
-
 
 # Disk usage
 #
