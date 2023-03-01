@@ -321,7 +321,7 @@ bar {
     urgent_workspace   #ffffff #900000
     }
 
-    font pango:RobotoMono Nerd Font Regular 13
+    font pango:RobotoMono Nerd Font Regular 14
 }
 #bar {
 #        status_command i3status
