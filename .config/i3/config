@@ -308,6 +308,10 @@ bindsym $mod+Home mode "$mode_system"
 # finds out, if available)
 bar {
     status_command SCRIPT_DIR=~/.config/i3blocks/scripts i3blocks
+
+    colors {
+    background #519446
+    }
 }
 #bar {
 #        status_command i3status
