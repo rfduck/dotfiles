@@ -204,7 +204,7 @@ client.focused           #096e18  #096e18 #ffffff #2e9ef4   #f71631
 # Gaps settings
 gaps inner 10 px
 gaps outer 5 px
-smart_gaps on
+#smart_gaps on
 
 # Hide borders if there is only one window on a workspace
 hide_edge_borders smart
