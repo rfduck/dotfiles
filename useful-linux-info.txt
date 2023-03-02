@@ -10,6 +10,7 @@ dotfiles: Alias for my dotfiles bare git repo
 eject: Aliased to eject -T for toggle
 fhr: Alias to run feh in fullscreen shuffle mode with no cursor
 gd: Alias to navigate to my Google Drive
+i3b: Open i3blocks config in vim
 i3c: Open i3wm config in vim  
 km: View keymappings for the keyboard
 linuxsync.sh: Backs up Home directory to external drive with rsync
@@ -31,6 +32,7 @@ vicd: Uses vifm to navigate through filesystem
 zdup: Alias to run zypper dup on OpenSUSE Tumbleweed
 zi: Alias to install package on OpenSUSE Tumbleweed
 zr: Alias to refresh zypper repositories on OpenSUSE Tumbleweed
+zs: Alias to search zypper
 
 # BASH
 
