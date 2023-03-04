@@ -89,7 +89,7 @@ interval=10
 label=󰍛 
 command=$SCRIPT_DIR/memory/memory
 separator=false
-interval=3
+interval=5
 background=#272727
 color=#448486
 
