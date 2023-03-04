@@ -241,7 +241,6 @@ bindsym XF86AudioPrev exec playerctl previous
 #exec_always --no-startup-id feh --bg-fill /mnt/d/GDrive/Pictures/Wallpaper/abstract-light.jpg
 exec_always --no-startup-id ~/bin/feh-wallpaper.sh
 
-
 #REDSHIFT NIGHT MODE 
 exec --no-startup-id redshift-gtk
 
@@ -250,16 +249,6 @@ exec picom -b --config ~/.config/picom/picom.conf
 
 #BLUETOOTH MANAGER
 exec --no-startup-id blueman-applet
-
-#i3 SHORCUT CHEATSHEET
-bindsym Mod1+k exec --no-startup-id kitty vim /mnt/d/GDrive/Documents/Files/i3-keyboard-shortcuts.txt
-
-#FSEARCH FILE SEARCH
-bindsym Mod1+f exec --no-startup-id flatpak run io.github.cboxdoerfer.FSearch
-for_window [class="Fsearch"] floating enable
-
-#MUSIC CURRENTLY PLAYING
-bindsym $mod+Shift+m exec --no-startup-id kitty sh ~/bin/now-playing.sh
 
 #FORCE KCOLORCHOOSER TO TILE
 for_window [class="kcolorchooser"] floating disable
@@ -285,6 +274,27 @@ bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT
 bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -3% && $refresh_i3status
 bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle && $refresh_i3status
 bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOURCE@ toggle && $refresh_i3status
+
+#}}}
+
+#-----LAUNCH MODE-----{{{
+set $launch Launch (f)search, (k)eyboard shortcuts, (m)edia now playing
+bindsym $mod+F5, mode "$launch"
+
+mode "$launch" {
+bindsym f exec flatpak run io.github.cboxdoerfer.FSearch
+
+bindsym k exec kitty vim /mnt/d/GDrive/Documents/Files/i3-keyboard-shortcuts.txt 
+
+bindsym m exec kitty sh ~/bin/now-playing.sh
+
+# Go back to normal mode: Enter or Escape
+bindsym Return mode "default"
+bindsym Escape mode "default"
+}
+
+#Make FSearch float
+for_window [class="Fsearch"] floating enable
 
 #}}}
 
