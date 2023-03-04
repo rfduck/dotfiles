@@ -282,11 +282,11 @@ set $launch Launch (f)search, (k)eyboard shortcuts, (m)edia now playing
 bindsym $mod+F5, mode "$launch"
 
 mode "$launch" {
-bindsym f exec flatpak run io.github.cboxdoerfer.FSearch
+bindsym f exec flatpak run io.github.cboxdoerfer.FSearch, mode "default"
 
-bindsym k exec kitty vim /mnt/d/GDrive/Documents/Files/i3-keyboard-shortcuts.txt 
+bindsym k exec kitty vim /mnt/d/GDrive/Documents/Files/i3-keyboard-shortcuts.txt, mode "default" 
 
-bindsym m exec kitty sh ~/bin/now-playing.sh
+bindsym m exec kitty sh ~/bin/now-playing.sh, mode "default"
 
 # Go back to normal mode: Enter or Escape
 bindsym Return mode "default"
