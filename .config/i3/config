@@ -44,16 +44,16 @@ bindsym $mod+Up focus up
 bindsym $mod+Right focus right
 
 # move focused window
-bindsym $mod+Shift+h move left
-bindsym $mod+Shift+j move down
-bindsym $mod+Shift+k move up
-bindsym $mod+Shift+l move right
+bindsym $mod+Shift+h exec i3l move left
+bindsym $mod+Shift+j exec i3l move down
+bindsym $mod+Shift+k exec i3l move up
+bindsym $mod+Shift+l exec i3l move right
 
 # alternatively, you can use the cursor keys:
-bindsym $mod+Shift+Left move left
-bindsym $mod+Shift+Down move down
-bindsym $mod+Shift+Up move up
-bindsym $mod+Shift+Right move right
+bindsym $mod+Shift+Left exec i3l move left
+bindsym $mod+Shift+Down exec i3l move down
+bindsym $mod+Shift+Up exec i3l move up
+bindsym $mod+Shift+Right exec i3l move right
 
 #focus parent and move left/right (useful for tabbed layouts)
 bindsym $mod+Mod1+h focus parent; focus child; focus left
@@ -103,6 +103,24 @@ bindsym $mod+Shift+minus move scratchpad
 
 # Show the first scratchpad window
 bindsym $mod+minus scratchpad show
+#}}}
+
+#I3-LAYOUTS MODE{{{
+set $layouts i3-Layouts 1:vstack 2:spiral 3:2columns 4:autosplit m:manual
+bindsym $mod+Ctrl+l, mode "$layouts"
+
+mode "$layouts" {
+bindsym 1 exec i3l vstack 0.6 right, mode "default"
+bindsym 2 exec i3l spiral 0.5 outside, mode "default"
+bindsym 3 exec i3l 2columns, mode "default"
+bindsym 4 exec i3l autosplit, mode "default"
+bindsym m exec i3l none, mode "default"
+
+#Go back to normal mode with Enter or Escape
+bindsym Return mode "default"
+bindsym Escape mode "default"
+
+}
 #}}}
 
 #-----SIZING-----{{{
@@ -245,10 +263,13 @@ exec_always --no-startup-id ~/bin/feh-wallpaper.sh
 exec --no-startup-id redshift-gtk
 
 #COMPOSITOR
-exec picom -b --config ~/.config/picom/picom.conf
+exec --no-startup-id picom -b --config ~/.config/picom/picom.conf
 
 #BLUETOOTH MANAGER
 exec --no-startup-id blueman-applet
+
+#I3-LAYOUTS
+exec --no-startup-id i3-layouts
 
 #FORCE KCOLORCHOOSER TO TILE
 for_window [class="kcolorchooser"] floating disable
@@ -355,6 +376,8 @@ bar {
 #bumblebee-status (status bar)
 #feh (image viewer, used to set desktop wallpaper)
 #i3blocks and https://github.com/vivien/i3blocks-contrib
+#i3-layouts (install by pip install --user i3-layouts)
+#    https://github.com/eliep/i3-layouts
 #kitty (terminal application)
 #lxappearance (GUI program to change gtk application themes)
 #nm-applet (applet to manage network connections) (aka NetworkManger-applet)
