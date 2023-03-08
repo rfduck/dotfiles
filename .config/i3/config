@@ -198,7 +198,7 @@ bindsym $mod+Shift+9 move container to workspace number $ws9
 bindsym $mod+Shift+0 move container to workspace number $ws10
 
 #default i3-layouts for workspaces
-set $i3l autosplit to workspace $ws1
+set $i3l vstack 0.63 right to workspace $ws1
 set $i3l autosplit to workspace $ws2
 set $i3l autosplit to workspace $ws3
 set $i3l autosplit to workspace $ws4
