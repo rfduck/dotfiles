@@ -284,6 +284,9 @@ exec --no-startup-id blueman-applet
 #I3-LAYOUTS
 exec --no-startup-id i3-layouts
 
+#xscreensaver
+exec --no-startup-id xscreensaver
+
 #FORCE KCOLORCHOOSER TO TILE
 for_window [class="kcolorchooser"] floating disable
 
