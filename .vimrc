@@ -145,7 +145,7 @@ nnoremap <leader>sv :SplitVifm<CR>
 "Leader gy: Enter Goyo mode
 "Leader hf: Fuzzy find my Home files 
 "Leader ht: Insert HTML tag
-"Leader mf: FuzzyFind my D drive
+"Leader mf: FuzzyFind my D drive documents
 "Leader mm: Load my vim mappings in split
 "Leader n: Navigate to Notes Folder
 "Leader p: Put blank line below
@@ -202,8 +202,8 @@ let g:limelight_conceal_ctermfg = 'black'
 
 "FZF FUNCTIONS
 
-"Fuzzyfind my D drive 
-command! -bang MyFiles call fzf#vim#files('/mnt/d', {'options': ['--preview', 'cat {}']},<bang>0) 
+"Fuzzyfind my D drive Documents
+command! -bang MyFiles call fzf#vim#files('/mnt/d/GDrive/Documents', {'options': ['--preview', 'cat {}']},<bang>0) 
 "shortcut for MyFiles:
 nnoremap <leader>mf :MyFiles!<CR> 
 
