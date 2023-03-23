@@ -21,7 +21,7 @@ filetype plugin indent on
 "set fileformat=unix "Use Unix file format
 set t_Co=256 "Use 256 color terminal
 set background=dark "dark background
-colorscheme gruvbox "Color Scheme
+colorscheme monochrome "Color Scheme
 "colorscheme habamax
 set clipboard+=unnamed,unnamedplus 
 set hidden "Enable hidden buffers
