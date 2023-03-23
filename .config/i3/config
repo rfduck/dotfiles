@@ -365,7 +365,7 @@ bar {
 
     #focused_workspace  #ffffff #285577
     #Name               Text    Background
-    focused_workspace  #000000 #989898
+    focused_workspace  #000000 #898D86
     active_workspace   #ffffff #333333
     inactive_workspace #888888 #000000
     urgent_workspace   #ffffff #900000
