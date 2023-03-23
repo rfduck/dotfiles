@@ -29,12 +29,67 @@ command=$SCRIPT_DIR/$BLOCK_NAME
 separator_block_width=15
 markup=pango
 
+#***********************
+#******USED BLOCKS******
+#***********************
 
 [i3-focusedwindow]
 command=$SCRIPT_DIR/i3-focusedwindow/i3-focusedwindow 50
 interval=persist
-background=#272727
-color=#679c68
+background=#000000
+color=#DADADA
+
+# Memory usage
+#
+# The type defaults to "mem" if the instance is not specified.
+[memory]
+label=󰍛 
+command=$SCRIPT_DIR/memory/memory
+separator=true
+interval=5
+background=#000000
+color=#989898
+
+[memory]
+label=SWAP
+instance=swap
+separator=false
+interval=30
+
+# Volume indicator
+#
+# The first parameter sets the step (and units to display)
+# The second parameter overrides the mixer selection
+# See the script for details.
+
+[volume]
+label=♪ 
+command=$SCRIPT_DIR/volume/volume
+#label=VOL
+interval=once
+signal=10
+STEP=1%
+background=#000000
+color=#DADADA
+
+[date]
+label= 
+command=date '+%a %b %d'
+interval=1
+background=#000000
+color=#989898
+
+[time]
+#command=date '+%Y-%m-%d %H:%M:%S'
+label= 
+command=date '+%I:%M:%S'
+interval=1
+background=#000000
+color=#DADADA
+
+#*************************
+#******UNUSED BLOCKS******
+#*************************
 
 # Disk usage
 #
@@ -82,38 +137,6 @@ separator=false
 label=LOAD
 interval=10
 
-# Memory usage
-#
-# The type defaults to "mem" if the instance is not specified.
-[memory]
-label=󰍛 
-command=$SCRIPT_DIR/memory/memory
-separator=false
-interval=5
-background=#272727
-color=#448486
-
-[memory]
-label=SWAP
-instance=swap
-separator=false
-interval=30
-
-# Volume indicator
-#
-# The first parameter sets the step (and units to display)
-# The second parameter overrides the mixer selection
-# See the script for details.
-
-[volume]
-label=♪ 
-command=$SCRIPT_DIR/volume/volume
-#label=VOL
-interval=once
-signal=10
-STEP=1%
-background=#272727
-color=#d69821
 
 # Battery indicator
 #
@@ -171,17 +194,3 @@ interval=30
 #interval=once
 #signal=11
 
-[date]
-label= 
-command=date '+%a %b %d'
-interval=1
-background=#272727
-color=#cb221b
-
-[time]
-#command=date '+%Y-%m-%d %H:%M:%S'
-label= 
-command=date '+%I:%M:%S'
-interval=1
-background=#272727
-color=#679c68
