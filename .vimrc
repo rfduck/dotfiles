@@ -41,6 +41,7 @@ set showmode "Show the mode
 set smartcase "Override ignore case when upper case letter is explicitly used
 set splitbelow "splits open below current buffer
 set splitright "splits open to right of current buffer
+set termguicolors
 set wildmenu "Enhanced command line completion
 set wrap "Set line wrapping
 
