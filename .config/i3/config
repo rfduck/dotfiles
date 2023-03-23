@@ -360,14 +360,14 @@ bar {
     status_command SCRIPT_DIR=~/.config/i3blocks/scripts i3blocks
 
     colors {
-    background #272727
+    background #000000
     statusline #ffffff
 
     #focused_workspace  #ffffff #285577
     #Name               Text    Background
-    focused_workspace  #000000 #679c68
+    focused_workspace  #000000 #989898
     active_workspace   #ffffff #333333
-    inactive_workspace #888888 #222222
+    inactive_workspace #888888 #000000
     urgent_workspace   #ffffff #900000
     }
 
