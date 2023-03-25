@@ -261,6 +261,7 @@ bindsym $mod+Return exec kitty
 # .desktop file. It is a wrapper around dmenu, so you need that installed.
 # bindcode $mod+40 exec --no-startup-id i3-dmenu-desktop
  bindcode $mod+40 exec rofi -show combi -modes combi -combi-modes "window#drun#run#"
+ bindcode $mod+Shift+40 exec rofi -show filebrowser
 
 
 #MEDIA PLAYER CONTROLS
