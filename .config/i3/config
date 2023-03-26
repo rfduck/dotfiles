@@ -106,7 +106,7 @@ bindsym $mod+minus scratchpad show
 #}}}
 
 #I3-LAYOUTS MODE{{{
-set $layouts i3-Layouts 1:vstack 2:spiral 3:2columns 4:autosplit m:manual
+set $layouts i3-Layouts 1:vstack 2:spiral 3:2columns 4:autosplit m:manual r:restart
 bindsym $mod+Ctrl+l, mode "$layouts"
 
 mode "$layouts" {
@@ -115,6 +115,7 @@ bindsym 2 exec i3l spiral 0.5 outside, mode "default"
 bindsym 3 exec i3l 2columns, mode "default"
 bindsym 4 exec i3l autosplit, mode "default"
 bindsym m exec i3l none, mode "default"
+bindsym r exec i3-layouts, mode "default"
 
 #Go back to normal mode with Enter or Escape
 bindsym Return mode "default"
@@ -317,11 +318,13 @@ bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOU
 #}}}
 
 #-----LAUNCH MODE-----{{{
-set $launch Launch (f)search, (k)eyboard shortcuts, (m)edia now playing
+set $launch Launch (c)alculator, (f)search, (k)eyboard shortcuts, (m)edia now playing
 bindsym $mod+F5, mode "$launch"
 
 mode "$launch" {
 bindsym f exec flatpak run io.github.cboxdoerfer.FSearch, mode "default"
+
+bindsym c exec rofi -show calc -modi calc -no-show-match -no-sort, mode "default"
 
 bindsym k exec kitty vim /mnt/d/GDrive/Documents/Files/i3-keyboard-shortcuts.txt, mode "default" 
 
@@ -405,6 +408,7 @@ bar {
 #qt5ct (application to change QT5 application themees)
 #redshift-gtk (GUI program to set color temperature at night)
 #rofi (program launcher)
+#rofi-calc (calculator for rofi)
 #xwininfo (needed for picom-trans)
 
 # NETWORKING: Use nmtui to start and configure wireless network
