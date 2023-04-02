@@ -266,10 +266,10 @@ bindsym $mod+Return exec kitty
 
 
 #MEDIA PLAYER CONTROLS
-bindsym XF86AudioPlay exec playerctl play-pause
-bindsym XF86AudioPause exec playerctl play-pause
-bindsym XF86AudioNext exec playerctl next
-bindsym XF86AudioPrev exec playerctl previous
+bindsym XF86AudioPlay exec playerctl -a play-pause
+bindsym XF86AudioPause exec playerctl -a play-pause
+bindsym XF86AudioNext exec playerctl -a next
+bindsym XF86AudioPrev exec playerctl -a previous
 
 #WALLPAPER
 #exec_always --no-startup-id feh --bg-fill /mnt/d/GDrive/Pictures/Wallpaper/abstract-light.jpg
