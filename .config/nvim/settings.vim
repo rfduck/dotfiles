@@ -49,7 +49,7 @@ set number
 set path+=** 
 
 "Set Print Options
-set printoptions=header:0 
+"set printoptions=header:0 
 
 "Session Options
 set sessionoptions=blank,buffers,curdir,folds,help,resize,tabpages,unix,winsize 
