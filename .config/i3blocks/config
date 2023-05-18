@@ -37,7 +37,7 @@ markup=pango
 command=$SCRIPT_DIR/i3-focusedwindow/i3-focusedwindow 50
 interval=persist
 background=#000000
-color=#DADADA
+color=#00ffff
 
 # Memory usage
 #
@@ -48,7 +48,7 @@ command=$SCRIPT_DIR/memory/memory
 separator=true
 interval=5
 background=#000000
-color=#989898
+color=#ffffff
 
 [memory]
 label=SWAP
@@ -70,14 +70,14 @@ interval=once
 signal=10
 STEP=1%
 background=#000000
-color=#DADADA
+color=#00ffff
 
 [date]
 label= 
 command=date '+%a %b %d'
 interval=1
 background=#000000
-color=#989898
+color=#ffffff
 
 [time]
 #command=date '+%Y-%m-%d %H:%M:%S'
@@ -85,7 +85,7 @@ label=
 command=date '+%I:%M:%S'
 interval=1
 background=#000000
-color=#DADADA
+color=#00ffff
 
 #*************************
 #******UNUSED BLOCKS******
