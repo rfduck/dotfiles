@@ -72,6 +72,7 @@ STEP=1%
 background=#000000
 color=#00ffff
 
+
 [date]
 label= 
 command=date '+%a %b %d'
