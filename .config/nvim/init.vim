@@ -10,5 +10,5 @@ source ~/.config/nvim/plugins.vim
 
 "COLOR SCHEMES
 "colorscheme elflord
-colorscheme monochrome 
+colorscheme blueprint 
 "colorscheme habamax
