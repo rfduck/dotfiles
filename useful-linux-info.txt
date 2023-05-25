@@ -12,6 +12,7 @@ fhr: Alias to run feh in fullscreen shuffle mode with no cursor
 gd: Alias to navigate to my Google Drive
 i3b: Open i3blocks config in vim
 i3c: Open i3wm config in vim  
+imv: Open images in directory in random mode with imv
 km: View keymappings for the keyboard
 linuxsync.sh: Backs up Home directory to external drive with rsync
 ll: Alias for long ls
