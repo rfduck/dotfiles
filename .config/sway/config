@@ -208,6 +208,9 @@ hide_edge_borders smart
 #Shut screen off after 20 minutes
 exec_always swayidle -w timeout 1200 'swaymsg "output * power off"' resume 'swaymsg "output * power on"'
 
+#Hide mouse cursor after inactivity
+seat seat0 hide_cursor 10000
+
 #}}}
 
 #-----WALLPAPER-----{{{
@@ -216,7 +219,7 @@ set $wallpaper_image tokyo-night.jpg
 output * background $wallpaper_dir/$wallpaper_image fill
 #}}}
 
-#-----EXTERNAL PROGRAMS-----{{
+#-----EXTERNAL PROGRAMS-----{{{
 
 #MAKE SURE PROGRAMS START FAST
 exec dbus-update-activation-environment --systemd DISPLAY WAYLAND_DISPLAY SWAYSOCK
