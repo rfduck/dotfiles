@@ -382,12 +382,6 @@ bar {
 #bar {
 #        status_command i3status
 #}
-# (BUMBLEBEE-STATUS) bar {
-        #status_command /usr/bin/bumblebee-status \
-        #-m title cpu memory nic amixer playerctl bluetooth2 datetime \
-        #-p title.scroll=true datetime.format="%a %b %-d %Y %I:%M:%S %p" amixer.percent_change=1% playerctl.hide=true nic.states=up nic.format={state} \
-        #-t night-powerline
-#}
 
 #}}}
 
@@ -395,7 +389,6 @@ bar {
 #
 # Dependencies: 
 #blueman (GUI program to manage bluetooth connections)
-#bumblebee-status (status bar)
 #feh (image viewer, used to set desktop wallpaper)
 #i3blocks and https://github.com/vivien/i3blocks-contrib
 #i3-layouts (install by pip install --user i3-layouts)
