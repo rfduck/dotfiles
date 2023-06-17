@@ -249,7 +249,7 @@ exec --no-startup-id blueman-applet
 #exec --no-startup-id xscreensaver
 
 #COLOR CONTROL
-exec_always --no-startup-id gammastep-indicator -c /home/rfegles/.config/gammastep/config.ini
+exec_always --no-startup-id gammastep-indicator -m wayland -c /home/rfegles/.config/gammastep/config.ini
 
 #Full Screen Screenshot
 bindsym Print exec grim ~/Pictures/Screenshots/$(date '+%y%m%d_%H-%M-%S').png 
