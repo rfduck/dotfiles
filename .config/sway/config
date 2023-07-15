@@ -334,3 +334,21 @@ swaybar_command waybar
 #}
 
 #}}}
+
+#------INFO------{{{
+# Dependencies:
+# 
+# blueman-applet
+# gammastep
+# grim
+# imv
+# kitty (terminal)
+# lxappearance
+# nm-applet
+# pamixer
+# playerctl
+# qt5ct
+# slurp
+
+# }}}
+
