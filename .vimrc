@@ -17,33 +17,80 @@ call plug#end()
 set wildoptions=pum "Command completion in a popup menu, only for Vim 9+
 
 " PERSONAL SETTINGS
+"
 filetype plugin indent on
-"set fileformat=unix "Use Unix file format
-set t_Co=256 "Use 256 color terminal
-set background=dark "dark background
-colorscheme monochrome "Color Scheme
-"colorscheme habamax
-set clipboard+=unnamed,unnamedplus 
-set hidden "Enable hidden buffers
-set ignorecase "Ignore case when searching
-set incsearch "Incremental searching on
-set linebreak "Set Line Breaks
-set modeline "Enable modeline
-set nobackup "No Backup files
-set nohlsearch "No highlighting on searches
-set writebackup "Make backup before overwriting file  
-"set noundofile "No Undo File
-set number "Show line numbers
-set path+=** "Add subdirectories of current directory to path
-set printoptions=header:0 "Set Print Options
-set sessionoptions=blank,buffers,curdir,folds,help,resize,tabpages,unix,winsize "Session Options
-set showmode "Show the mode
-set smartcase "Override ignore case when upper case letter is explicitly used
-set splitbelow "splits open below current buffer
-set splitright "splits open to right of current buffer
+
+"Use Unix file format
+"set fileformat=unix 
+
+"Use 256 color terminal
+set t_Co=256 
+
+"dark background
+set background=dark 
+
+"Clipboard options
+set clipboard+=unnamed,unnamedplus  
+
+"Enable hidden buffers
+set hidden 
+
+"Ignore case when searching
+set ignorecase 
+
+"Incremental searching on
+set incsearch 
+
+"Set Line Breaks
+set linebreak 
+
+"Enable modeline
+set modeline 
+
+"No Backup files
+set nobackup 
+
+"No highlighting on searches
+set nohlsearch 
+
+"Make backup before overwriting file  
+set writebackup 
+
+"No Undo File
+"set noundofile 
+
+"Show line numbers
+set number 
+
+"Add subdirectories of current directory to path
+set path+=** 
+
+"Set Print Options
+"set printoptions=header:0 
+
+"Session Options
+set sessionoptions=blank,buffers,curdir,folds,help,resize,tabpages,unix,winsize 
+
+"Show the mode
+set showmode 
+
+"Override ignore case when upper case letter is explicitly used
+set smartcase 
+
+"splits open below current buffer
+set splitbelow 
+
+"splits open to right of current buffer
+set splitright 
+
+"Terminal GUI colors
 set termguicolors
-set wildmenu "Enhanced command line completion
-set wrap "Set line wrapping
+
+"Enhanced command line completion
+set wildmenu 
+
+"Set line wrapping
+set wrap 
 
 " TABS AND INDENTING
 set autoindent "Auto Indenting in Code
@@ -52,9 +99,13 @@ set softtabstop=4 "Soft Tab Stop
 set shiftwidth=4 "Shift Width
 set expandtab "Expand Tab
 
+"------------------------------------------
 "--------MAPPINGS AND ABBREVIATIONS--------
+"------------------------------------------
 
+"-----------------------------
 "----MAPPINGS FOR SETTINGS----
+"-----------------------------
 
 "Change Leader to , instead of \
 let mapleader = ","
@@ -104,7 +155,9 @@ nnoremap <leader>w <C-W>
 inoremap <BS> <ESC>
 
 
-"----CUSTOM MAPPINGS----
+"-------------------------
+"----CUSTOM MAPPINGS------
+"-------------------------
 
 "Inserting divider:
 nnoremap <leader>d :put='----------------------------------' <CR> o
@@ -119,7 +172,9 @@ nnoremap <leader>sm :source $MYVIMRC<CR>
 tnoremap <Esc> <C-\><C-n>
 
 
-"----PLUGIN MAPPINGS----
+"-------------------------
+"----PLUGIN MAPPINGS------
+"-------------------------
 
 "Entering Goyo mode
 nnoremap <leader>gy :Goyo 40%x50% <CR>
@@ -130,7 +185,36 @@ nnoremap <leader>vv :VsplitVifm<CR>
 nnoremap <leader>sv :SplitVifm<CR>
 
 
+"------------------------
+"------MY DOCUMENTS------
+"------------------------
+"
+"Remap for Navigating to Notes Folder
+cnoremap <leader>rfn /mnt/d/GDrive/Documents/Notes/
+
+"Remap for Navigating to Russ Documents
+cnoremap <leader>rfd /mnt/d/GDrive/Documents/
+
+"Remap for Navigating to Russ Files
+cnoremap <leader>rff /mnt/d/GDrive/Documents/Files/
+
+"Remap for Navigating to Temporary folder
+cnoremap <leader>tm  /mnt/d/GDrive/Temporary
+"D:\GDrive\Temporary\
+
+"------------------------
+"-----ABBREVIATIONS:-----
+"------------------------
+"Capitalize OK
+:ab ok OK
+:ab Ok OK
+:ab Ok, OK,
+:ab ok, OK,
+:ab Ok. OK.
+:ab ok. OK.
+"-------------------------------------------
 "--------SUMMARY OF LEADER MAPPINGS:--------
+"-------------------------------------------
 " Leader key: ,
 " <ENTER>: :w
 "F2: Paste from clipboard
@@ -160,32 +244,9 @@ nnoremap <leader>sv :SplitVifm<CR>
 "Leader vv: Vifm and open in vertical split
 "Leader w: Ctrl-w
 
-
-"MY DOCUMENTS
-"
-"Remap for Navigating to Notes Folder
-cnoremap <leader>rfn /mnt/d/GDrive/Documents/Notes/
-
-"Remap for Navigating to Russ Documents
-cnoremap <leader>rfd /mnt/d/GDrive/Documents/
-
-"Remap for Navigating to Russ Files
-cnoremap <leader>rff /mnt/d/GDrive/Documents/Files/
-
-"Remap for Navigating to Temporary folder
-cnoremap <leader>tm  /mnt/d/GDrive/Temporary
-"D:\GDrive\Temporary\
-
-"ABBREVIATIONS:
-"Capitalize OK
-:ab ok OK
-:ab Ok OK
-:ab Ok, OK,
-:ab ok, OK,
-:ab Ok. OK.
-:ab ok. OK.
-"""""""""""""""""""""""
-"PLUGIN SETTINGS
+"--------------------------------
+"-----PLUGIN SETTINGS------------
+"--------------------------------
 
 "LIMELIGHT
 
