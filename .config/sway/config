@@ -243,7 +243,7 @@ bindsym XF86AudioNext exec playerctl next
 bindsym XF86AudioPrev exec playerctl previous
 
 #BLUETOOTH MANAGER
-exec --no-startup-id blueman-applet
+exec_always --no-startup-id blueman-applet
 
 #XSCREENSAVER
 #exec --no-startup-id xscreensaver
@@ -262,7 +262,7 @@ for_window [class="kcolorchooser"] floating disable
 
 # NetworkManager is the most popular way to manage wireless networks on Linux,
 # and nm-applet is a desktop environment-independent system tray GUI for it.
-exec nm-applet --indicator
+exec_always /usr/bin/nm-applet --indicator
 
 # Use pactl to adjust volume in PulseAudio.
 set $refresh_swaystatus killall -SIGUSR1 swaystatus
