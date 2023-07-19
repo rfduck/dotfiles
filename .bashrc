@@ -45,7 +45,7 @@ source ~/fzf-tab-completion/bash/fzf-bash-completion.sh
 bind -x '"\t": fzf_bash_completion'
 
 #COMMACD, ENHANCED CD FUNCTION
-source ~/bin/.commacd.sh
+#source ~/bin/.commacd.sh
 
 #USE VIFM TO NAVIGATE DIRECTORY STRUCTURE
 vicd()
