@@ -37,8 +37,8 @@ alias tm="watch -t -n 1 date +%r" #Display current time
 alias tmd="watch -t -n 1 date +%c" #Display the time and date
 alias ttyc="tty-clock -bcst -C 6"
 alias useful="less ~/useful-linux-info.txt" #View the useful Linux info
-alias vc=". ~/bin/vc.sh" #Run vc.sh
-alias vcd=". ~/bin/vcd.sh" #Run vcd.sh
+alias vc=". ~/.local/bin/vc.sh" #Run vc.sh
+alias vcd=". ~/.local/bin/vcd.sh" #Run vcd.sh
 
 #OPENSUSE ZYPPER ALIASES
 alias zdup="sudo flatpak update -y && sudo zypper dup" #Update OpenSuse Tumbleweed and Flatpak
