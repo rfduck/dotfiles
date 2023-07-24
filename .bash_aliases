@@ -15,7 +15,7 @@ alias sls="ls -AhF -1 --group-directories-first | less" #Simple directory and fi
 
 
 #SHUFFLE ALIASES
-alias rnd=". ~/bin/random.sh"
+alias rnd=". ~/.local/bin/random.sh"
 alias thousand="shuf -n 1 '/mnt/d/GDrive/Documents/Files/1001-albums-you-must-hear.txt'" #Shuffle a 1001 album
 
 #NAVIGATION ALIASES
@@ -27,12 +27,12 @@ alias rff="cd /mnt/d/GDrive/Documents/Files" #Go to Files directory
 alias bsm="less ~/Documents/bismuth-tiling-shortcuts.txt " #See Bismuth shortcuts
 alias dg="dotfiles-git.sh" #Run dotfiles-git
 alias fhr="feh -qzZFY &" #Feh Fullscreen Random
-alias i3b="nvim ~/.config/i3blocks/config" #Opens i3blocks config in neovim
-alias i3c="nvim ~/.config/i3/config" #Opens i3 config in neovim
+alias i3b="vim ~/.config/i3blocks/config" #Opens i3blocks config in neovim
+alias i3c="vim ~/.config/i3/config" #Opens i3 config in neovim
 alias imvr="find -regextype posix-extended -regex '.*\.(jpg|png)$' | shuf | imv-wayland -f" #Opens images in random order using imv
 alias km="less /mnt/d/GDrive/Documents/Files/keychron-k8-pro-keymappings.txt"
 alias nv="nvim" #Make nvim command shorter
-alias scripts="ls -Ah -1 $HOME/bin" 
+alias scripts="ls -Ah -1 $HOME/.local/bin" 
 alias tm="watch -t -n 1 date +%r" #Display current time
 alias tmd="watch -t -n 1 date +%c" #Display the time and date
 alias ttyc="tty-clock -bcst -C 6"
