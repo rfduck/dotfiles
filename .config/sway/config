@@ -287,7 +287,7 @@ bindsym f exec flatpak run io.github.cboxdoerfer.FSearch, mode "default"
 
 bindsym k exec kitty nvim /mnt/d/GDrive/Documents/Files/i3-keyboard-shortcuts.txt, mode "default" 
 
-bindsym m exec kitty sh ~/bin/now-playing.sh, mode "default"
+bindsym m exec kitty sh ~/.local/bin/now-playing.sh, mode "default"
 
 # Go back to normal mode: Enter or Escape
 bindsym Return mode "default"
