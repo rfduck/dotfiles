@@ -29,6 +29,9 @@ set t_Co=256
 "dark background
 set background=dark 
 
+"Color Scheme
+colorscheme bluedrake 
+
 "Clipboard options
 set clipboard+=unnamed,unnamedplus  
 
