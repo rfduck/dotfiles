@@ -32,7 +32,9 @@ fi
 
 #FZF FUZZY FINDER
 #FZF shortcuts
-[ -f ~/.fzf.bash ] && source ~/.fzf.bash
+#[ -f ~/.fzf.bash ] && source ~/.fzf.bash
+#Use keybindings in Debian
+source /usr/share/doc/fzf/examples/key-bindings.bash
 
 #FZF DEFAULT COMMAND
 export FZF_DEFAULT_COMMAND='find .' 
