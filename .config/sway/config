@@ -234,7 +234,7 @@ bindsym $mod+Return exec kitty
 # PROGRAM LAUNCHER
 # bindcode $mod+40 exec rofi -show combi -modes combi -combi-modes "window#drun#run"
 bindcode $mod+40 exec krunner
-bindsym $mod+Shift+d exec flatpak run io.github.cboxdoerfer.FSearch
+bindsym $mod+Shift+d exec fsearch
 
 # CALCULATOR
 bindsym $mod+u exec kitty --class=qalc qalc
@@ -283,7 +283,7 @@ bindcode $mod+71, mode "$launch"
 
 mode "$launch" {
 bindsym c exec rofi -show calc -modi calc -no-show-match -no-sort, mode "default" 
-bindsym f exec flatpak run io.github.cboxdoerfer.FSearch, mode "default"
+bindsym f exec fsearch, mode "default"
 
 bindsym k exec kitty nvim /mnt/d/GDrive/Documents/Files/i3-keyboard-shortcuts.txt, mode "default" 
 
