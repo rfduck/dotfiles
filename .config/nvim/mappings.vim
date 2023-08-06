@@ -94,8 +94,7 @@ cnoremap <leader>rfd /mnt/d/GDrive/Documents/
 cnoremap <leader>rff /mnt/d/GDrive/Documents/Files/
 
 "Remap for Navigating to Temporary folder
-cnoremap <leader>tm  /mnt/d/GDrive/Temporary
-"D:\GDrive\Temporary\
+cnoremap <leader>tm  /mnt/d/GDrive/Temporary/
 
 "------------------------
 "-----ABBREVIATIONS:-----
