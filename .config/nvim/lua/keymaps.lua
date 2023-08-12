@@ -1,67 +1,52 @@
--- Variable for keymap setting
-local keymap = vim.keymap.set
+--KEYMAP CONFIG
+--keymappings for neovim
+--lives at .config/nvim/lua/keymaps.lua
 
--- Set leader key
-vim.g.mapleader = ','
+
+local keymap = vim.keymap.set -- Variable for keymap setting
+
+vim.g.mapleader = ',' -- Set leader key
 
 -- MAPPINGS FOR SETTINGS
 --
---keymap ('n', '', '')
+keymap('n', '<ENTER>', '<cmd>w!<CR>') -- Writing the document
 
--- Writing the document
-keymap('n', '<ENTER>', '<cmd>w!<CR>')
+keymap('n', '<F2>', '<cmd>"*p') -- Pasting from clipboard
 
--- Pasting from clipboard
-keymap('n', '<F2>', '<cmd>"*p')
+keymap('i', 'jj', '<ESC>') -- jj instead of Esc in Insert mode  
 
--- jj instead of Esc in Insert mode  
-keymap('i', 'jj', '<ESC>')
+keymap('i', '<a', '<a href=""></a><ESC>2F') -- Inserting URL tag in Insert mode
 
--- Inserting URL tag in Insert mode
-keymap('i', '<a', '<a href=""></a><ESC>2F')
+keymap('n', '<leader>b', '^') -- Leader-b instead of ^ for beginning of line
 
--- Leader-b instead of ^ for beginning of line
-keymap('n', '<leader>b', '^')
-
--- Switching buffers quickly
-keymap('n', '<leader>bf', '<cmd>ls<CR>:b<SPACE>')
+keymap('n', '<leader>bf', '<cmd>ls<CR>:b<SPACE>') -- Switching buffers quickly
 
 -- Toggle line and column highlighting at cursor position
 keymap('n', '<leader>cl', '<cmd>setlocal cursorline!<CR>')
 keymap('n', '<leader>cc', '<cmd>setlocal cursorcolumn!<CR>')
 keymap('n', '<leader>clc', '<cmd>setlocal cursorline! cursorcolumn!<CR>')
 
--- Leader-e instead of $ for end of line
-keymap('n', '<leader>e', '$')
+keymap('n', '<leader>e', '$') -- Leader-e instead of $ for end of line
 
--- Inserting URL tag in Normal mode
-keymap('n', '<leader>ht', 'i<a href=""></a><ESC>2F')
+keymap('n', '<leader>ht', 'i<a href=""></a><ESC>2F') -- Inserting URL tag in Normal mode
 
--- Inserting a blank space below
-keymap('n', '<leader>p', 'o<ESC>k')
+keymap('n', '<leader>p', 'o<ESC>k') -- Inserting a blank space below
 
--- Inserting a blank space above:
-keymap('n', '<leader>P', 'O<ESC>j')
+keymap('n', '<leader>P', 'O<ESC>j') -- Inserting a blank space above:
 
--- Toggling relative numbers
-keymap('n', '<leader>rn', '<cmd>setlocal relativenumber!<CR>')
+keymap('n', '<leader>rn', '<cmd>setlocal relativenumber!<CR>') -- Toggling relative numbers
 
--- Leader-w instead of Ctrl-w for Window actions
-keymap('n', '<leader>w', '<C-W>')
+keymap('n', '<leader>w', '<C-W>') -- Leader-w instead of Ctrl-w for Window actions
 
--- Turn off backspace in insert mode
-keymap('i', '<BS>', '<ESC>')
+keymap('i', '<BS>', '<ESC>') -- Turn off backspace in insert mode
 --
 ------CUSTOM MAPPINGS-----
 --
--- Inserting divider:
-keymap('n', '<leader>d', '----------------------------------<CR>o')
+keymap('n', '<leader>d', '----------------------------------<CR>o') --Inserting divider
 
--- View my vim mappings in a split
-keymap('n', '<leader>mm', '<cmd>split<CR><cmd>view ~/Documents/my-vim-mappings.txt<CR>')
+keymap('n', '<leader>mm', '<cmd>split<CR><cmd>view ~/Documents/my-vim-mappings.txt<CR>') -- View my vim mappings in a split
 
--- Source my init.lua
-keymap('n', '<leader>sm', '<cmd>source ~/.config/nvim/init.lua')
+keymap('n', '<leader>sm', '<cmd>source ~/.config/nvim/init.lua') -- Source my init.lua
 
 -- Return to normal mode in Nvim terminal
 --keymap('t', '<ESC>', '<C-\><C-n>')
@@ -69,7 +54,7 @@ keymap('n', '<leader>sm', '<cmd>source ~/.config/nvim/init.lua')
 -------
 -------Plugin Mappings
 -------
---
+-----TELESCOPE-----
 -- Telescope Pickers
 keymap('n', '<leader>fb', '<cmd>Telescope buffers<CR>') --buffers
 keymap('n', '<leader>fc', '<cmd>Telescope colorscheme<CR>') --color schemes
@@ -80,28 +65,24 @@ keymap('n', '<leader>fnv', '<cmd>lua require("plugins.telescope.functions").nvim
 keymap('n', '<leader>hf', '<cmd>lua require("plugins.telescope.functions").homefiles()<CR>') --Files in Home directory
 keymap('n', '<leader>mf', '<cmd>lua require("plugins.telescope.functions").myfiles()<CR>') --Files in GDrive
 
--- Entering Goyo mode
-keymap('n', '<leader>gy', '<cmd>Goyo 40%x50% <CR>')
+-----GOYO-----
+keymap('n', '<leader>gy', '<cmd>Goyo 40%x50% <CR>') -- Entering Goyo mode
 
--- Remaps for Vifm file explorer integration
-keymap('n', '<leader>vf', '<cmd>Vifm<CR>')
-keymap('n', '<leader>vv', '<cmd>VisplitVifm<CR>')
-keymap('n', '<leader>sv', '<cmd>SplitVifm<CR>')
+-----VIFM-----
+keymap('n', '<leader>vf', '<cmd>Vifm<CR>') --Open and edit file
+keymap('n', '<leader>vv', '<cmd>VisplitVifm<CR>') --Open and edit file in vertical split
+keymap('n', '<leader>sv', '<cmd>SplitVifm<CR>') --Open and edit file in horizontal split
 
 ----------
 ----------MY DOCUMENTS
 ----------
--- Remap for navigating to Notes folder
-keymap('c', '<leader>rfn', '/mnt/d/GDrive/Documents/Notes/')
+keymap('c', '<leader>rfn', '/mnt/d/GDrive/Documents/Notes/') -- Remap for navigating to Notes folder
 
--- Remap for navigating to Russ Documents
-keymap('c', '<leader>rfd', '/mnt/d/GDrive/Documents/')
+keymap('c', '<leader>rfd', '/mnt/d/GDrive/Documents/') -- Remap for navigating to Russ Documents
 
--- Remap for navigating to Russ Files
-keymap('c', '<leader>rff', '/mnt/d/GDrive/Documents/Files/')
+keymap('c', '<leader>rff', '/mnt/d/GDrive/Documents/Files/') -- Remap for navigating to Russ Files
 
--- Remap for navigating to Temporary folder
-keymap('c', '<leader>tm', '/mnt/d/GDrive/Temporary/')
+keymap('c', '<leader>tm', '/mnt/d/GDrive/Temporary/') -- Remap for navigating to Temporary folder
 
 --------
 --------ABBREVIATIONS
@@ -131,8 +112,10 @@ vim.cmd('ab ok. OK')
 --Leader e: End of line
 --Leader fb: Fuzzy find buffers
 --Leader fc: Fuzzy find color schemes
+--Leader ff: Fuzzy find my Files directory
 --Leader fh: Fuzzy find help tags
 --Leader fk: Fuzzy find keybindings
+--Leader fnv: Fuzzy find neovim files
 --Leader gy: Enter Goyo mode
 --Leader hf: Fuzzy find my Home files 
 --Leader ht: Insert HTML tag
