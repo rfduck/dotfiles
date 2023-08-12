@@ -1,4 +1,7 @@
--- TELESCOPE SETUP
+-- TELESCOPE SETUP CONFIG
+-- Defaults and fzf loading
+-- lives at .config/nvim/lua/plugins/telescope/init.lua
+
 require('telescope').setup{
 defaults = {
     path_display = {
