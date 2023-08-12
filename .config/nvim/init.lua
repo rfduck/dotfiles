@@ -1,5 +1,5 @@
 --NEOVIM MAIN CONFIG
---lives at .config/nvim/
+--lives at .config/nvim/init.lua
 
 --Use the 'settings' and 'keymaps' modules
 require('settings')
