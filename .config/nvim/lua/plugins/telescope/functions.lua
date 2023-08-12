@@ -1,5 +1,10 @@
+--TELESCOPE FUNCTIONS
+--Custom functions for telescope pickers
+--Lives at .config/nvim/lua/plugins/telescope/functions.lua
+
 local M = {}
 
+--Search my data drive directories
 function M.myfiles()
 require('telescope.builtin').find_files({
     search_dirs = {'/mnt/d/GDrive/Documents/', '/mnt/d/GDrive/Temporary'},
@@ -9,6 +14,7 @@ require('telescope.builtin').find_files({
 })
 end
 
+--Search my neovim config files
 function M.nvimconfig()
 require('telescope.builtin').find_files({
     search_dirs = {"/home/rfegles/.config/nvim/"},
@@ -19,6 +25,7 @@ require('telescope.builtin').find_files({
 })
 end
 
+--Search my files in my Home directory on Linux
 function M.homefiles()
 require('telescope.builtin').find_files({
     search_dirs = {"/home/rfegles/"},
@@ -29,6 +36,7 @@ require('telescope.builtin').find_files({
 })
 end
 
+--Search my Documents/Files directory
 function M.filedir()
 require('telescope.builtin').find_files({
     search_dirs = {"/mnt/d/GDrive/Documents/Files/"},
