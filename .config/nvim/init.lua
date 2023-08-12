@@ -1,3 +1,7 @@
+--NEOVIM MAIN CONFIG
+--lives at .config/nvim/
+
+--Use the 'settings' and 'keymaps' modules
 require('settings')
 require('keymaps')
 
