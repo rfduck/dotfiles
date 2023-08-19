@@ -94,6 +94,9 @@ vim.cmd('ab ok, OK')
 vim.cmd('ab Ok. OK') 
 vim.cmd('ab ok. OK') 
 
+vim.cmd('ab teh the')
+vim.cmd('ab Teh The')
+vim.cmd([[ab dont' don't]])
 
 -------------------------------------------
 --------SUMMARY OF LEADER MAPPINGS:--------
