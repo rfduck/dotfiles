@@ -15,12 +15,6 @@ return {
     build = 'cmake -S. -Bbuild -DCMAKE_BUILD_TYPE=Release && cmake --build build --config Release && cmake --install build --prefix build' 
     },
 
-    --Goyo
-    {'junegunn/goyo.vim', lazy=true},
-
-    --Limelight
-    {'junegunn/limelight.vim', lazy=true},
-
     --Vifm
     {'vifm/vifm.vim', lazy=false},
 
