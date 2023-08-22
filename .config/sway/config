@@ -219,7 +219,7 @@ seat seat0 hide_cursor 10000
 
 #-----WALLPAPER-----{{{
 set $wallpaper_dir /mnt/d/GDrive/Pictures/Wallpaper/
-set $wallpaper_image turquoise-mountains.jpg
+set $wallpaper_image debian-do-it.jpg
 output * background $wallpaper_dir/$wallpaper_image fill
 #}}}
 
