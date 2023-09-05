@@ -34,7 +34,8 @@
         }
     },
     "sway/mode": {
-        "format": "<span style=\"italic\">{}</span>"
+        "format": "<span style=\"italic\">{}</span>",
+        "min-length": 70
     },
     "sway/scratchpad": {
         "format": "{icon} {count}",
