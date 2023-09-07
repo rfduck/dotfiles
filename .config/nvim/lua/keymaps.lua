@@ -11,7 +11,7 @@ vim.g.mapleader = ',' -- Set leader key
 --
 keymap('n', '<ENTER>', '<cmd>w!<CR>') -- Writing the document
 
-keymap('n', '<F2>', '<cmd>"*p') -- Pasting from clipboard
+keymap('n', '<F2>', '<cmd>"*p<CR>') -- Pasting from clipboard
 
 keymap('i', 'jj', '<ESC>') -- jj instead of Esc in Insert mode  
 
