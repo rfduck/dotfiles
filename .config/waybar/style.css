@@ -52,13 +52,13 @@ button {
 /* https://github.com/Alexays/Waybar/wiki/FAQ#the-workspace-buttons-have-a-strange-hover-effect */
 button:hover {
     background: inherit;
-    box-shadow: inset 0 -3px #ff0000;
+    box-shadow: inset 0 -3px #ff3200;
 }
 
 #workspaces button {
     padding: 0 5px;
     background-color: transparent;
-    color: #ff0000;
+    color: #ff3200;
     font-weight: normal;
     /*text-shadow: 0px 2px 2px black;*/
 }
@@ -68,7 +68,7 @@ button:hover {
 }
 
 #workspaces button.focused {
-    background-color: #ff0000;
+    background-color: #ff3200;
     color: #000000;
     font-weight: 100;
     /*text-shadow: 0px 0.5px 0.5px black;*/
@@ -120,7 +120,7 @@ button:hover {
 }
 
 #clock {
-    background-color: #ff0000;
+    background-color: #ff3200;
     color: #000000;
     font-weight: bold;
     /*text-shadow: 0px 0.5px 0.5px black;*/
@@ -165,7 +165,7 @@ label:focus {
 #memory {
     background-color: #000000;
     /*text-shadow: 0px 0.5px 0.5px black;*/
-    color: #ff0000;
+    color: #ff3200;
     font-weight: normal;
 }
 
@@ -187,7 +187,7 @@ label:focus {
 
 #pulseaudio {
     background-color: #000000;
-    color: #ff0000;
+    color: #ff3200;
     /*text-shadow: 0px 0.5px 0.5px black; */
     font-weight: normal ;
 }
@@ -230,7 +230,7 @@ label:focus {
 
 #tray {
     background-color: #000000;
-    color: #ff0000;
+    color: #ff3200;
 }
 
 
@@ -295,7 +295,7 @@ label:focus {
 
 #scratchpad {
     background: rgba(0, 0, 0, 1.0);
-    color: #ff0000;
+    color: #ff3200;
     /*text-shadow: 0px 0px 0px;*/
 }
 
