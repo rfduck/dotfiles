@@ -1,7 +1,6 @@
-# Find filetype for file by typing xdg-mime query filetype NAMEOFFILE
-# Find default app for filetype by typing xdg-mime query default FILETYPE
-# Find desktop entries in /usr/share/applications or /usr/local/share/applications
-
 [Default Applications]
 text/plain=org.kde.kate.desktop
 application/pdf=org.kde.okular.desktop
+
+[Added Associations]
+image/png=feh.desktop;
