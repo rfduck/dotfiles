@@ -140,3 +140,11 @@ tmux: Terminal multiplexer (multiple terminals in one window)
 
 xprop: X window property viewer
     To find the class of a window: Run xprop WM_CLASS in a terminal, and then click with your mouse on the window you want to find a class for 
+
+TO CHANGE APP ASSOCIATIONS USING MIME:
+1. File location is at .config/mimeapps.list
+2. Find filetype for file by typing xdg-meme query filetype NAMEOFFILE
+3. Find default app for filetype by typing xdg-mime query default FILETYPE
+4. Find desktop entries in /usr/share/applications or /usr/local/share/applications
+5. Edit file, add entries under [Default Applications] as such:
+filetype/type=name.of.desktop.file
