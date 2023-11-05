@@ -219,7 +219,7 @@ seat seat0 hide_cursor 10000
 
 #-----WALLPAPER-----{{{
 set $wallpaper_dir /mnt/d/GDrive/Pictures/Wallpaper/
-set $wallpaper_image corpse-bride-emily.jpg
+set $wallpaper_image cozy-fireplace-01.jpg
 output * background $wallpaper_dir/$wallpaper_image fill
 #}}}
 
