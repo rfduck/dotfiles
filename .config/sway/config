@@ -232,9 +232,12 @@ exec dbus-update-activation-environment --systemd DISPLAY WAYLAND_DISPLAY SWAYSO
 bindsym $mod+Return exec kitty
 
 # PROGRAM LAUNCHER
-# bindcode $mod+40 exec rofi -show combi -modes combi -combi-modes "window#drun#run"
-bindcode $mod+40 exec krunner
+# bindcode $mod+40 exec krunner
+set $menu tofi-drun --terminal=kitty | xargs swaymsg exec --
+set $trun tofi-run | xargs swaymsg exec kitty --
+bindsym $mod+d exec $menu
 bindsym $mod+Shift+d exec fsearch
+bindsym $mod+Ctrl+d exec $trun
 
 # CALCULATOR
 bindsym $mod+u exec kitty --class=qalc qalc
