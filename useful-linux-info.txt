@@ -150,3 +150,13 @@ TO CHANGE APP ASSOCIATIONS USING MIME:
 4. Find desktop entries in /usr/share/applications or /usr/local/share/applications
 5. Edit file, add entries under [Default Applications] as such:
 filetype/type=name.of.desktop.file
+
+TO INSTALL NEW FONTS:
+1. Download font from website in a .zip file (or other archived file format)
+2. Extract contents into folder, or extract later
+3. Font locations are in /usr/share/fonts or ~/.local/fonts. The first is system-wide.
+4. Make a new folder for the font in either location.
+5. Extract, or copy previously extracted, font files into the newly-created folder.
+6. Run sudo fc-cache -f -v to rebuild the font cache and install your new font.
+7. To confirm font was installed, run fc-list | grep "NAMEOFFONT"
+
