@@ -64,9 +64,7 @@ keymap('n', '<leader>fk', '<cmd>Telescope keymaps<CR>') --key mappings
 keymap('n', '<leader>fnv', '<cmd>lua require("plugins.telescope.functions").nvimconfig()<CR>') --Files in Nvim config
 keymap('n', '<leader>hf', '<cmd>lua require("plugins.telescope.functions").homefiles()<CR>') --Files in Home directory
 keymap('n', '<leader>mf', '<cmd>lua require("plugins.telescope.functions").myfiles()<CR>') --Files in GDrive
-
------GOYO-----
-keymap('n', '<leader>gy', '<cmd>Goyo 40%x50% <CR>') -- Entering Goyo mode
+keymap('n', '<leader>uk', '<cmd>lua require("plugins.telescope.functions").ukulele()<CR>') --Ukulele Songs
 
 -----VIFM-----
 keymap('n', '<leader>vf', '<cmd>Vifm<CR>') --Open and edit file
@@ -132,6 +130,7 @@ vim.cmd([[ab dont' don't]])
 --Leader sm: Source myvimrc 
 --Leader sv: Vifm and open in split
 --Leader tm: Navigate to Tempoary directory
+--Leader uk: Fuzzy find Ukulele songs
 --Leader vf: Vifm and edit file
 --Leader vv: Vifm and open in vertical split
 --Leader w: Ctrl-w
