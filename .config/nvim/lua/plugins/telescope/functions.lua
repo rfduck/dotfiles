@@ -46,4 +46,14 @@ require('telescope.builtin').find_files({
 })
 end
 
+--Search my Ukulele songs
+function M.ukulele()
+require('telescope.builtin').find_files({
+    search_dirs = {"/mnt/d/GDrive/Documents/Ukulele/Songs/"},
+    prompt_title = "Search Ukulele Songs",
+    layout_strategy = "vertical",
+    layout_config = { preview_cutoff = 1, preview_height = 0.3}
+})
+end
+
 return M
