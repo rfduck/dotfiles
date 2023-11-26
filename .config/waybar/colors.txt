@@ -1,0 +1,10 @@
+COLORS:
+white: #FFFFFF;
+black: #000000;
+orange: #FF6F00;
+Turquoise: #00f1f1;
+Christmas Green: #00aa00;
+Christmass Red: #cc0000;
+Christmas Green 2: #44ff00
+Christmas Red 2: #ff0022
+
