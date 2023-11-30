@@ -218,9 +218,7 @@ seat seat0 hide_cursor 10000
 #}}}
 
 #-----WALLPAPER-----{{{
-set $wallpaper_dir /mnt/d/GDrive/Pictures/Wallpaper/
-set $wallpaper_image christmas-market-1.jpg
-output * background $wallpaper_dir/$wallpaper_image fill
+exec_always ~/.config/sway/wallpaper.sh
 #}}}
 
 #-----EXTERNAL PROGRAMS-----{{{
