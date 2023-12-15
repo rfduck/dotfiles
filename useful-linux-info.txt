@@ -10,6 +10,7 @@ dotfiles: Alias for my dotfiles bare git repo
 eject: Aliased to eject -T for toggle
 fhr: Alias to run feh in fullscreen shuffle mode with no cursor
 gd: Alias to navigate to my Google Drive
+gst: Alias to start or stop gammastep
 i3b: Open i3blocks config in vim
 i3c: Open i3wm config in vim  
 imv: Open images in directory in random mode with imv
