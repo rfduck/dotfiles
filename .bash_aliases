@@ -27,6 +27,7 @@ alias rff="cd /mnt/d/GDrive/Documents/Files" #Go to Files directory
 alias bsm="less ~/Documents/bismuth-tiling-shortcuts.txt " #See Bismuth shortcuts
 alias dg="dotfiles-git.sh" #Run dotfiles-git
 alias fhr="feh -qzZFY &" #Feh Fullscreen Random
+alias gst="gstep.sh" #Start or stop gammastep
 alias i3b="nvim ~/.config/i3blocks/config" #Opens i3blocks config in neovim
 alias i3c="nvim ~/.config/i3/config" #Opens i3 config in neovim
 alias imvr="find -regextype posix-extended -regex '.*\.(jpg|png)$' | shuf | imv-wayland -f" #Opens images in random order using imv
