@@ -26,4 +26,4 @@ vim.opt.rtp:prepend(lazypath)
 require("lazy").setup("plugins")
 
 -- Color Scheme
-vim.cmd([[colorscheme aquamarine]])
+vim.cmd([[colorscheme earendel]])
