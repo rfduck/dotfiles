@@ -161,3 +161,14 @@ TO INSTALL NEW FONTS:
 6. Run sudo fc-cache -f -v to rebuild the font cache and install your new font.
 7. To confirm font was installed, run fc-list | grep "NAMEOFFONT"
 
+TO VERIFY DOWNLOADED FILE USING CHECKSUMS:
+1. Download .iso or other file, and the appropriate checksum file matching that file (sha256 or sha512)
+2. Generate the checksum for the .iso by running:
+
+sha256sum NAMEOFFILE
+
+3. Once that is done, check to see if the .iso checksum matches the checksum file:
+
+sha256sum -c NAMEOFCHECKSUMFILE
+
+If the output reads 'OK', you're good to go. 
