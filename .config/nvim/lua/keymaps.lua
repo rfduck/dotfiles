@@ -62,6 +62,7 @@ keymap('n', '<leader>ff', '<cmd>lua require("plugins.telescope.functions").filed
 keymap('n', '<leader>fh', '<cmd>Telescope help_tags<CR>') --Help tags
 keymap('n', '<leader>fk', '<cmd>Telescope keymaps<CR>') --key mappings
 keymap('n', '<leader>fnv', '<cmd>lua require("plugins.telescope.functions").nvimconfig()<CR>') --Files in Nvim config
+keymap('n', '<leader>hd', '<cmd>lua require("plugins.telescope.functions").homedocs()<CR>') --Docs in Home
 keymap('n', '<leader>hf', '<cmd>lua require("plugins.telescope.functions").homefiles()<CR>') --Files in Home directory
 keymap('n', '<leader>mf', '<cmd>lua require("plugins.telescope.functions").myfiles()<CR>') --Files in GDrive
 keymap('n', '<leader>uk', '<cmd>lua require("plugins.telescope.functions").ukulele()<CR>') --Ukulele Songs
