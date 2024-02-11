@@ -36,6 +36,17 @@ require('telescope.builtin').find_files({
 })
 end
 
+--Search my documents in my Home directory on Linux
+function M.homedocs()
+require('telescope.builtin').find_files({
+    search_dirs = {"/home/rfegles/Documents"},
+    prompt_title = "Search Home Docs",
+    hidden = "true",
+    layout_strategy = "vertical",
+    layout_config = { preview_cutoff = 1, preview_height = 0.3},
+})
+end
+
 --Search my Documents/Files directory
 function M.filedir()
 require('telescope.builtin').find_files({
