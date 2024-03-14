@@ -39,6 +39,9 @@ keymap('n', '<leader>rn', '<cmd>setlocal relativenumber!<CR>') -- Toggling relat
 keymap('n', '<leader>w', '<C-W>') -- Leader-w instead of Ctrl-w for Window actions
 
 keymap('i', '<BS>', '<ESC>') -- Turn off backspace in insert mode
+
+keymap('n', '<BS>', '<NOP>') -- Turn off backspace in normal mode
+
 --
 ------CUSTOM MAPPINGS-----
 --
