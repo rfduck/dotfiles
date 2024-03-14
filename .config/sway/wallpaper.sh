@@ -1,6 +1,6 @@
 #!/bin/bash
 
 WDIR=/mnt/d/GDrive/Pictures/Wallpaper/
-WIMG=rivendell.jpg
+WIMG=prestige-lights.jpg
 
 swaymsg output "*" bg $WDIR/$WIMG fill
