@@ -105,3 +105,6 @@ export ZYPP_MEDIANETWORK=1
 
 #ALIAS FOR DOTFILES BARE REPO
 alias dotfiles='git --git-dir=/home/rfegles/.dotfiles --work-tree=/home/rfegles'
+
+#Zoxide setup
+eval "$(zoxide init --cmd cd bash)" 
