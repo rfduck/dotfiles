@@ -172,3 +172,17 @@ sha256sum NAMEOFFILE
 sha256sum -c NAMEOFCHECKSUMFILE
 
 If the output reads 'OK', you're good to go. 
+
+TO CREATE BOOTABLE USB USING DD
+
+1. Make sure USB drive is plugged in by running lsblk in terminal. Note the name of the device (e.g. /dev/sdd)
+2. Make sure all partitions of USB drive are unmounted:
+
+sudo umount /dev/sdx?
+
+3. Use dd to create bootable USB drive:
+
+sudo dd if=/path/to/linux/iso of=/dev/nameofusbdevice bs=4M status=progress
+
+Make sure to use WHOLE device for output, not just a partition of it. E.g. /dev/sdx, NOT /dev/sdx1 
+
