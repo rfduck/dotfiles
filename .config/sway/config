@@ -1,0 +1,365 @@
+# vim:foldmethod=marker
+
+#CONFIG FOR SWAYWM
+
+#-----BASIC KEYS-----{{{
+
+#Set Mod key 
+set $mod Mod4
+# (That's the Windows/Super key)
+
+#Set terminal
+set $term kitty
+
+# kill focused window
+#bindsym $mod+Shift+q kill
+bindsym Mod1+q kill
+
+# reload the configuration file
+bindsym $mod+Shift+c reload
+
+# Exit sway (logs you out of your Wayland session)
+bindsym $mod+Shift+e exec swaynag -t warning -m 'You pressed the exit shortcut. Do you really want to exit sway? This will end your Wayland session.' -B 'Yes, exit sway' 'swaymsg exit'
+#}}}
+
+#-----MOVING-----{{{
+
+# change focus
+bindsym $mod+h focus left
+bindsym $mod+j focus down
+bindsym $mod+k focus up
+bindsym $mod+l focus right
+
+# alternatively, you can use the cursor keys:
+bindsym $mod+Left focus left
+bindsym $mod+Down focus down
+bindsym $mod+Up focus up
+bindsym $mod+Right focus right
+
+# move focused window
+bindsym $mod+Shift+h  move left
+bindsym $mod+Shift+j  move down
+bindsym $mod+Shift+k  move up
+bindsym $mod+Shift+l  move right
+
+# alternatively, you can use the cursor keys:
+bindsym $mod+Shift+Left  move left
+bindsym $mod+Shift+Down  move down
+bindsym $mod+Shift+Up  move up
+bindsym $mod+Shift+Right  move right
+
+#focus parent and move left/right (useful for tabbed layouts)
+bindsym $mod+Mod1+h focus parent; focus child; focus left
+bindsym $mod+Mod1+Left focus parent; focus child; focus left
+bindsym $mod+Mod1+semicolon focus parent; focus child; focus right
+bindsym $mod+Mod1+Right exec focus parent; focus child; focus right
+
+# focus the parent container
+bindsym $mod+p focus parent
+
+# focus the child container
+bindsym $mod+c focus child
+
+# move tiling windows via drag & drop by left-clicking into the title bar,
+# or left-clicking anywhere into the window while holding the floating modifier.
+tiling_drag enable
+
+# Focus window by moving mouse over window
+focus_follows_mouse no
+
+#}}}
+
+#-----LAYOUTS-----{{{
+# split in horizontal orientation
+bindsym $mod+z split h
+
+# split in vertical orientation
+bindsym $mod+v split v
+
+# enter fullscreen mode for the focused container
+bindsym $mod+f fullscreen toggle
+
+# change container layout (stacked, tabbed, toggle split)
+bindsym $mod+s layout stacking
+bindsym $mod+w layout tabbed
+bindsym $mod+e layout toggle split
+
+# toggle tiling / floating
+bindsym $mod+Shift+space floating toggle
+
+# change focus between tiling / floating windows
+bindsym $mod+space focus mode_toggle
+
+# SCRATCHPADS
+# Make the currently focused window a scratchpad
+bindsym $mod+Shift+minus move scratchpad
+
+# Show the first scratchpad window
+bindsym $mod+minus scratchpad show
+#}}}
+
+#-----SIZING-----{{{
+
+# resize window (you can also use the mouse for that)
+mode "resize" {
+        # These bindings trigger as soon as you enter the resize mode
+
+        # Pressing left will shrink the window’s width.
+        # Pressing right will grow the window’s width.
+        # Pressing up will shrink the window’s height.
+        # Pressing down will grow the window’s height.
+        bindsym h resize shrink width 3 px or 3 ppt
+        bindsym j resize grow height 3 px or 3 ppt
+        bindsym k resize shrink height 3 px or 3 ppt
+        bindsym l resize grow width 3 px or 3 ppt
+
+        # same bindings, but for the arrow keys
+        bindsym Left resize shrink width 3 px or 3 ppt
+        bindsym Down resize grow height 3 px or 3 ppt
+        bindsym Up resize shrink height 3 px or 3 ppt
+        bindsym Right resize grow width 3 px or 3 ppt
+
+        # back to normal: Enter or Escape or $mod+r
+        bindsym Return mode "default"
+        bindsym Escape mode "default"
+        bindsym $mod+r mode "default"
+}
+
+bindsym $mod+r mode "resize"
+#}}}
+
+#-----WORKSPACES-----{{{
+
+# Define names for default workspaces for which we configure key bindings later on.
+# We use variables to avoid repeating the names in multiple places.
+set $ws1 "1"
+set $ws2 "2"
+set $ws3 "3"
+set $ws4 "4"
+set $ws5 "5"
+set $ws6 "6"
+set $ws7 "7"
+set $ws8 "8"
+set $ws9 "9"
+set $ws10 "10"
+
+# switch to workspace
+bindsym $mod+1 workspace number $ws1
+bindsym $mod+2 workspace number $ws2
+bindsym $mod+3 workspace number $ws3
+bindsym $mod+4 workspace number $ws4
+bindsym $mod+5 workspace number $ws5
+bindsym $mod+6 workspace number $ws6
+bindsym $mod+7 workspace number $ws7
+bindsym $mod+8 workspace number $ws8
+bindsym $mod+9 workspace number $ws9
+bindsym $mod+0 workspace number $ws10
+
+bindsym $mod+Ctrl+Left workspace prev
+bindsym $mod+Ctrl+Right workspace next
+bindsym $mod+Ctrl+p move window to workspace prev
+bindsym $mod+Ctrl+n move window to workspace next
+
+# move focused container to workspace
+bindsym $mod+Shift+1 move container to workspace number $ws1
+bindsym $mod+Shift+2 move container to workspace number $ws2
+bindsym $mod+Shift+3 move container to workspace number $ws3
+bindsym $mod+Shift+4 move container to workspace number $ws4
+bindsym $mod+Shift+5 move container to workspace number $ws5
+bindsym $mod+Shift+6 move container to workspace number $ws6
+bindsym $mod+Shift+7 move container to workspace number $ws7
+bindsym $mod+Shift+8 move container to workspace number $ws8
+bindsym $mod+Shift+9 move container to workspace number $ws9
+bindsym $mod+Shift+0 move container to workspace number $ws10
+
+#}}}
+
+#-----UI-----{{{
+
+# Font for window titles. Will also be used by the bar unless a different font
+# is used in the bar {} block below.
+font pango:Arial Regular 13
+
+
+# This font is widely installed, provides lots of unicode glyphs, right-to-left
+# text rendering and scalability on retina/hidpi displays (thanks to pango).
+#font pango:DejaVu Sans Mono 8
+
+# Border
+default_border pixel 3
+for_window [class="Google-chrome"] border normal
+
+# Colors
+# class                 border  backgr. text    indicator child_border
+client.focused           #096e18  #096e18 #ffffff #2e9ef4   #f71631
+#client.focused      #dadada  #808080  #ffffff #2e9ef4   #dadada
+
+#client.background   #1dde43 #094212
+
+# Gaps settings
+gaps inner 10
+gaps outer 5
+#smart_gaps on
+
+# Hide borders if there is only one window on a workspace
+hide_edge_borders smart
+
+#}}}
+
+#-----MISC SETTINGS-----{{{
+
+#Shut screen off after 20 minutes
+# Method 1: Newest version:
+# exec_always swayidle -w timeout 1200 'swaymsg "output * power off"' resume 'swaymsg "output * power on"'
+#
+# Method 2: For older version:
+exec_always swayidle -w timeout 1200 'swaymsg "output * disable"' resume 'swaymsg "output * enable"'
+
+#Hide mouse cursor after inactivity
+seat seat0 hide_cursor 10000
+
+#}}}
+
+#-----WALLPAPER-----{{{
+exec_always ~/.config/sway/wallpaper.sh
+#}}}
+
+#-----EXTERNAL PROGRAMS-----{{{
+
+#MAKE SURE PROGRAMS START FAST
+exec dbus-update-activation-environment --systemd DISPLAY WAYLAND_DISPLAY SWAYSOCK
+
+#START A TERMINAL
+bindsym $mod+Return exec $term
+
+# PROGRAM LAUNCHER
+# bindcode $mod+40 exec krunner
+set $menu xfce4-appfinder
+for_window [app_id="xfce4-appfinder"] floating enable, resize set 600 600
+#set $menu tofi-drun --terminal=kitty | xargs swaymsg exec --
+#set $trun tofi-run | xargs swaymsg exec kitty --
+bindsym $mod+d exec $menu
+bindsym $mod+Shift+d exec fsearch
+bindsym $mod+Ctrl+d exec $trun
+
+# CALCULATOR
+bindsym $mod+u exec $term --class=qalc qalc
+for_window [app_id="qalc"] floating enable, resize set 500 500
+
+#MEDIA PLAYER CONTROLS
+bindsym XF86AudioPlay exec playerctl play-pause
+bindsym XF86AudioPause exec playerctl play-pause
+bindsym XF86AudioNext exec playerctl next
+bindsym XF86AudioPrev exec playerctl previous
+
+#BLUETOOTH MANAGER
+exec_always --no-startup-id blueman-applet
+
+#XSCREENSAVER
+#exec --no-startup-id xscreensaver
+
+#COLOR CONTROL
+exec_always --no-startup-id gammastep -m wayland -c /home/rfegles/.config/gammastep/config.ini
+
+#Full Screen Screenshot
+bindsym Print exec grim ~/Pictures/Screenshots/$(date '+%y%m%d_%H-%M-%S').png 
+
+#Screenshot a selected region
+bindsym Shift+Print exec grim -g "$(slurp)" ~/Pictures/Screenshots/$(date '+%y%m%d_%H-%M-%S').png
+
+#FORCE KCOLORCHOOSER TO TILE
+for_window [class="kcolorchooser"] floating disable
+
+# NetworkManager is the most popular way to manage wireless networks on Linux,
+# and nm-applet is a desktop environment-independent system tray GUI for it.
+exec_always /usr/bin/nm-applet --indicator
+
+# Use pactl to adjust volume in PulseAudio.
+set $refresh_swaystatus killall -SIGUSR1 swaystatus
+bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +1% && $refresh_swaystatus
+bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -1% && $refresh_swaystatus
+bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle && $refresh_swaystatus
+bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOURCE@ toggle && $refresh_swaystatus
+
+#}}}
+
+#-----LAUNCH MODE-----{{{
+set $launch Launch (c)alculator, (f)search, (k)eyboard shortcuts, (m)edia now playing
+bindcode $mod+71, mode "$launch"
+
+mode "$launch" {
+bindsym c exec rofi -show calc -modi calc -no-show-match -no-sort, mode "default" 
+bindsym f exec fsearch, mode "default"
+
+bindsym k exec $term nvim /mnt/d/GDrive/Documents/Files/i3-keyboard-shortcuts.txt, mode "default" 
+
+bindsym m exec $term sh ~/.local/bin/now-playing.sh, mode "default"
+
+# Go back to normal mode: Enter or Escape
+bindsym Return mode "default"
+bindsym Escape mode "default"
+}
+
+#Make FSearch float
+for_window [app_id="fsearch"] floating enable
+
+#}}}
+
+#-----POWER MENU-----{{{
+set $mode_system System (l) lock, (e) logout, (s) suspend, (r) reboot, (u) shutdown
+mode "$mode_system" {
+    bindsym l exec --no-startup-id swaylock, mode "default"
+    bindsym e exec --no-startup-id swaymsg exit, mode "default"
+    bindsym s exec --no-startup-id systemctl suspend, mode "default"
+    bindsym r exec --no-startup-id systemctl reboot, mode "default"
+    bindsym u exec --no-startup-id systemctl poweroff, mode "default"
+
+    # back to normal: Enter or Escape
+    bindsym Return mode "default"
+    bindsym Escape mode "default"
+}
+bindsym $mod+Home mode "$mode_system"
+
+#}}}
+
+#-----BAR-----{{{
+
+bar {
+
+swaybar_command waybar
+
+#    colors {
+#    background #000000
+#    statusline #ffffff
+#
+#    #focused_workspace  #ffffff #285577
+#    #Name              Border   Text    Background
+#    focused_workspace  #000000  #000000 #00ffff
+#    active_workspace   #000000  #000000 #00ffff
+#    inactive_workspace #000000  #888888 #000000
+#    urgent_workspace   #000000  #ffffff #900000
+#    }
+#
+#    font pango:RobotoMono Nerd Font Regular 14
+#}
+
+#}}}
+
+#------INFO------{{{
+# Dependencies:
+# 
+# blueman-applet
+# gammastep
+# grim
+# imv
+# kitty (terminal)
+# lxappearance
+# nm-applet
+# pamixer
+# playerctl
+# qt5ct
+# slurp
+# xfce4-appfinder
+
+# }}}
+

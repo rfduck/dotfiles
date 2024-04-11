@@ -1,0 +1,85 @@
+HOW TO USE A BARE GIT REPO FOR DOTFILES
+
+Information from https://www.atlassian.com/git/tutorials/dotfiles and modified by Russ Fegles
+
+1. Create directory for bare git repo
+
+mkdir ~/.dotfiles
+
+2. Create .gitignore (if not already created) and add bare git repo to it
+
+touch ~/.gitignore
+echo "~/.dotfiles" >> .gitignore
+
+3. Initialize the bare Git repo
+
+git init --bare $HOME/.dotfiles
+
+4. Set alias for working with bare Git repo
+
+alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles --work-tree=$HOME'
+
+5. Set bare repo to ignore all untracked files
+
+dotfiles config --local status.ShowUntrackedFiles no
+
+6. Add alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles --work-tree=$HOME' to bashrc
+
+echo "alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles --work-tree=$HOME'" >> $HOME/.bashrc
+
+7. Close bash session and re-open
+
+8. Add dotfiles to your bare repo
+
+dotfiles add .bashrc
+
+9. Commit your changes
+
+dotfiles commit -m "Commit message"
+
+(Any command you can use with git can be used with your new alias for your bare repo)
+
+10. Set up a dotfiles repo on Github or other git hosting service
+
+dotfiles remote add origin URL
+
+11. Push your repo to Github
+
+dotfiles push origin master
+
+######################
+
+TO INSTALL YOUR DOTFILES REPO ON A NEW MACHINE:
+
+1. Add dotfiles repo to .gitignore
+
+touch ~/.gitignore
+echo "~/.dotfiles" >> .gitignore
+
+3. Clone dotfiles from Github into a bare repository in your Home folder
+
+git clone --bare URL $HOME/.dotfiles
+
+4. Add alias to bash session 
+
+alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles --work-tree=$HOME'
+
+5. Checkout content from Github repo to your $HOME
+
+dotfiles checkout
+
+6. You may get the following error during Checkout:
+
+error: The following untracked working tree files would be overwritten by checkout:
+    .bashrc
+    .gitignore
+Please move or remove them before you can switch branches.
+Aborting
+
+If so, this means some of the existing files in your $HOME already have the same name. Either backup or delete files as needed, and repeat the checkout process until no errors
+
+7. Take care of the untracked files
+
+dotfiles config --local status.ShowUntrackedFiles no
+
+8. You're finished!

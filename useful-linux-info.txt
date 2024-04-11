@@ -1,0 +1,189 @@
+#PERSONAL ALIASES, SCRIPTS, AND FUNCTIONS:
+
+backup-scripts.sh: Backs up the scripts directory
+bsm: Alias to view my Bismuth Tiling shortcuts
+cheat: Provides cheatsheet for given bash command
+cl: Alias for clear
+commacd: uses , to navigate through filesystem
+dg/dotfiles-git.sh: Runs Git add, commit, push for given filename in the dotfiles git bare repo
+dotfiles: Alias for my dotfiles bare git repo
+eject: Aliased to eject -T for toggle
+fhr: Alias to run feh in fullscreen shuffle mode with no cursor
+gd: Alias to navigate to my Google Drive
+gst: Alias to start or stop gammastep
+i3b: Open i3blocks config in vim
+i3c: Open i3wm config in vim  
+imv: Open images in directory in random mode with imv
+km: View keymappings for the keyboard
+linuxsync.sh: Backs up Home directory to external drive with rsync
+ll: Alias for long ls
+minetestbk.sh: Backs up my Minetest garden
+nv: Alias for neovim
+rfd: Alias to navigate to my Documents on the data HD
+rff: Alias to naviage to my Files on the data HD
+rnd/random.sh: Shell script to randomize various things 
+scl: SuperClear alias. Clears screen and returns to Home directory
+scripts: Alias to see the contents of the scripts/bin directory
+sls: Alias for simple, one-column ls view of everything in directory
+thousand: Alias to shuffle my 1001 albums list and return the top item
+tm: Display time 
+tmd: Display time and date
+ttyc: Alias for my custom config of tty-clock
+useful: Alias to view this file!
+vicd: Uses vifm to navigate through filesystem
+zdup: Alias to run zypper dup on OpenSUSE Tumbleweed
+zi: Alias to install package on OpenSUSE Tumbleweed
+zr: Alias to refresh zypper repositories on OpenSUSE Tumbleweed
+zs: Alias to search zypper
+
+# BASH
+
+Ctrl+l: Clear screen
+
+cd: Change directory; also command to go directly to $HOME 
+. : Current directory
+.. : Parent directory
+~ : Home directory 
+eject: eject a CD. Use -t to toggle between open and closed
+lsblk: List all devices on system, including mount points
+nohup: Keep program from closing when terminal closes. nohup PROGRAMNAME &
+pwd: Print Working Directory
+uname: Display basic system information
+
+
+# TERMINAL PROGRAMS AND COMMAND EXAMPLES
+
+bluetoothctl: Control bluetooth and devices
+    for interactive mode, simply run bluetoothctl
+    power on: turn on bluetooth adapter
+    scan on: Scan for devices
+    discoverable on: Make adapter discoverable
+    pair [MAC address]
+    connect [MAC address]
+
+column: Format terminal information into columns
+
+crontab: Schedule cronjobs to run via the cron program. Set the cron job like this:
+
+    (In terminal, run crontab -e)
+
+    * * * * * commands, task, or script to be run
+    a b c d e
+
+    a:Minute (0-59)
+    b:Hour (0-23)
+    c:Day of month (1-31)
+    d:Month of year (1-12)
+    e:Day of week (0-6) 0 is Sunday
+
+    An asterisk means run it every specified time period. To run something every minute, leave all asterisks.
+
+    To view the scheduled cronjobs, run crontab -l
+
+expr: Evaluate expressions/do math
+    You must use whitespace between each number and escape any special characters with single quotes
+    Example: 20 '*' 5
+
+
+fc-list: List all fonts
+    Example: fc-list | grep Arial
+
+feh: Image viewer
+    Flags to use:
+    F: Make feh run in fullscreen
+    n: Reverse the sort order
+    q: Quiet, supress error messages
+    r: Recursively search directories for images to display
+    --start-at : Start at the specified filename
+    S: Sort by (name, filename, dirname, mtime, width, height, pixels, size, format). Use --reverse to reverse the sort order 
+    Y: Hide cursor
+    z: Randomize images
+    Z: Zoom image to full screen
+
+    Press 'd' while in fullscreen mode to display image filename (or use '-d' flag)
+
+find: Search file system contents
+fzf: Fuzzy-find anything on bash
+fzf-tab-completion: Make bash use fzf for tab completion
+
+gh: Github CLI program
+    To update your personal token, run gh auth login in the proper repo, and paste your updated token copied to clipboard when prompted
+
+git: Version control
+    Typical git workflow:
+    git init: Initialize git repo in folder
+    git add: Add file to be commited
+    git commit -m "message": Commit files to repo, with message
+    git push -u origin master: Push repo changes to git repo on cloud (Github, etc.). Substitute 'master' for actual name of branch
+
+    To list all currently tracked files in repository:
+    git ls-tree --full-tree --name-only -r HEAD
+
+grep: Search file content
+    Example: grep "thing you're searching for" filename.txt
+
+mount: mount a disk or device
+    Step 1: Create directory to mount the device to, or use existing one
+    Step 2: Look up name of device using sudo blkid or lsblk (example: /dev/sdc1)
+    Step 3: sudo mount /dev/name /mount/directory (-v to confirm device mounted)
+    Step 4: To unmount, use sudo umount /dev/name (-v to confirm device unmounted) 
+
+inxi: System information
+
+shuf: Shuffle input and write result to standard output
+    Examples:
+    *Shuffle file and select top result: shuf -n 1 FILENAME
+    *Shuffle input and select top result: shuf -n 1 -e 'option1' 'option2' 'option3'
+    *Select random number from range: shuf -n 1 -i 1-500
+
+tar: Utility for tar.gz files
+    To extract a tar.gz file: Run tar -xvzf NAMEOFFILE
+
+tmux: Terminal multiplexer (multiple terminals in one window)
+
+xprop: X window property viewer
+    To find the class of a window: Run xprop WM_CLASS in a terminal, and then click with your mouse on the window you want to find a class for 
+
+TO CHANGE APP ASSOCIATIONS USING MIME:
+1. File location is at .config/mimeapps.list
+2. Find filetype for file by typing xdg-meme query filetype NAMEOFFILE
+3. Find default app for filetype by typing xdg-mime query default FILETYPE
+4. Find desktop entries in /usr/share/applications or /usr/local/share/applications
+5. Edit file, add entries under [Default Applications] as such:
+filetype/type=name.of.desktop.file
+
+TO INSTALL NEW FONTS:
+1. Download font from website in a .zip file (or other archived file format)
+2. Extract contents into folder, or extract later
+3. Font locations are in /usr/share/fonts or ~/.local/fonts. The first is system-wide.
+4. Make a new folder for the font in either location.
+5. Extract, or copy previously extracted, font files into the newly-created folder.
+6. Run sudo fc-cache -f -v to rebuild the font cache and install your new font.
+7. To confirm font was installed, run fc-list | grep "NAMEOFFONT"
+
+TO VERIFY DOWNLOADED FILE USING CHECKSUMS:
+1. Download .iso or other file, and the appropriate checksum file matching that file (sha256 or sha512)
+2. Generate the checksum for the .iso by running:
+
+sha256sum NAMEOFFILE
+
+3. Once that is done, check to see if the .iso checksum matches the checksum file:
+
+sha256sum -c NAMEOFCHECKSUMFILE
+
+If the output reads 'OK', you're good to go. 
+
+TO CREATE BOOTABLE USB USING DD
+
+1. Download a Linux distribution .iso file and put it somewhere convenient.
+2. Make sure USB drive is plugged in by running lsblk in terminal. Note the name of the device (e.g. /dev/sdd)
+3. Make sure all partitions of USB drive are unmounted:
+
+sudo umount /dev/sdx?
+
+4. Use dd to create bootable USB drive:
+
+sudo dd if=/path/to/linux/iso of=/dev/nameofusbdevice bs=4M status=progress
+
+Make sure to use WHOLE device for output, not just a partition of it. E.g. /dev/sdx, NOT /dev/sdx1 
+

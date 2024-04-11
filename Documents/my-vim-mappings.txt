@@ -1,0 +1,30 @@
+"SUMMARY OF LEADER MAPPINGS:
+" Leader key: ,
+" <ENTER>: :w
+"F2: Paste from clipboard
+"jj: Esc
+"Leader <a: Insert URL tag in Insert mode 
+"Leader b: Beginning of line
+"Leader bf: Switch buffers
+"Leader cl: Toggle cursorline highlighting
+"Leader cc: Toggle cursorcolumn highlighting
+"Leader clc: Toggle both cursorline and cursorcolumn highlighting
+"Leader d: Insert divider
+"Leader e: End of line
+"Leader gy: Enter Goyo mode
+"Leader hf: Fuzzy find my Home files 
+"Leader ht: Insert HTML tag
+"Leader mf: FuzzyFind my D drive
+"Leader mm: View my vim mappings in split 
+"Leader n: Navigate to Notes Folder
+"Leader p: Put blank line below
+"Leader P: Put blank line above
+"Leader rfd: Navigate to Russ Documents
+"Leader rff: Navigate to Russ Files
+"Leader rfn: Toggle relative line numbers
+"Leader sm: Source myvimrc 
+"Leader sv: Vifm and open in split
+"Leader tm: Navigate to Tempoary directory
+"Leader vf: Vifm and edit file
+"Leader vv: Vifm and open in vertical split
+"Leader w: Ctrl-w
