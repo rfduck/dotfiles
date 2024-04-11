@@ -8,6 +8,9 @@
 set $mod Mod4
 # (That's the Windows/Super key)
 
+#Set terminal
+set $term kitty
+
 # kill focused window
 #bindsym $mod+Shift+q kill
 bindsym Mod1+q kill
@@ -227,7 +230,7 @@ exec_always ~/.config/sway/wallpaper.sh
 exec dbus-update-activation-environment --systemd DISPLAY WAYLAND_DISPLAY SWAYSOCK
 
 #START A TERMINAL
-bindsym $mod+Return exec kitty
+bindsym $mod+Return exec $term
 
 # PROGRAM LAUNCHER
 # bindcode $mod+40 exec krunner
@@ -238,7 +241,7 @@ bindsym $mod+Shift+d exec fsearch
 bindsym $mod+Ctrl+d exec $trun
 
 # CALCULATOR
-bindsym $mod+u exec kitty --class=qalc qalc
+bindsym $mod+u exec $term --class=qalc qalc
 for_window [app_id="qalc"] floating enable, resize set 500 500
 
 #MEDIA PLAYER CONTROLS
@@ -286,9 +289,9 @@ mode "$launch" {
 bindsym c exec rofi -show calc -modi calc -no-show-match -no-sort, mode "default" 
 bindsym f exec fsearch, mode "default"
 
-bindsym k exec kitty nvim /mnt/d/GDrive/Documents/Files/i3-keyboard-shortcuts.txt, mode "default" 
+bindsym k exec $term nvim /mnt/d/GDrive/Documents/Files/i3-keyboard-shortcuts.txt, mode "default" 
 
-bindsym m exec kitty sh ~/.local/bin/now-playing.sh, mode "default"
+bindsym m exec $term sh ~/.local/bin/now-playing.sh, mode "default"
 
 # Go back to normal mode: Enter or Escape
 bindsym Return mode "default"
