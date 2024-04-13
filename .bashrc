@@ -5,7 +5,7 @@
 export PATH="$HOME/.local/bin:$PATH"
 
 #EDITOR
-export EDITOR="/home/rfegles/neovim/nvim-linux64/bin/nvim"
+export EDITOR="nvim"
 
 # There are 3 different types of shells in bash: the login shell, normal shell
 # and interactive shell. Login shells read ~/.profile and interactive shells
@@ -32,9 +32,9 @@ fi
 
 #FZF FUZZY FINDER
 #FZF shortcuts
-#[ -f ~/.fzf.bash ] && source ~/.fzf.bash
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash
 #Use keybindings in Debian
-source /usr/share/doc/fzf/examples/key-bindings.bash
+#source /usr/share/doc/fzf/examples/key-bindings.bash
 
 #FZF DEFAULT COMMAND
 export FZF_DEFAULT_COMMAND='find .' 
