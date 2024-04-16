@@ -2,7 +2,7 @@
 # Copyright (c) SUSE Software Solutions Germany GmbH
 
 #PATH
-export PATH="$HOME/.local/bin:$PATH"
+export PATH="$HOME/.local/bin:$HOME/.local/share/flatpak/exports/bin:$PATH"
 
 #EDITOR
 export EDITOR="nvim"
