@@ -234,10 +234,8 @@ bindsym $mod+Return exec $term
 
 # PROGRAM LAUNCHER
 # bindcode $mod+40 exec krunner
-# set $menu xfce4-appfinder
-# for_window [app_id="xfce4-appfinder"] floating enable, resize set 600 600
-exec_always albert --platform xcb
-set $menu albert toggle
+set $menu xfce4-appfinder
+for_window [app_id="xfce4-appfinder"] floating enable, resize set 600 600
 #set $menu tofi-drun --terminal=kitty | xargs swaymsg exec --
 #set $trun tofi-run | xargs swaymsg exec kitty --
 bindsym $mod+d exec $menu
