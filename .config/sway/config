@@ -226,6 +226,7 @@ exec_always ~/.config/sway/wallpaper.sh
 
 #-----EXTERNAL PROGRAMS-----{{{
 
+
 #MAKE SURE PROGRAMS START FAST
 exec dbus-update-activation-environment --systemd DISPLAY WAYLAND_DISPLAY SWAYSOCK
 
@@ -234,8 +235,9 @@ bindsym $mod+Return exec $term
 
 # PROGRAM LAUNCHER
 # bindcode $mod+40 exec krunner
-set $menu xfce4-appfinder
-for_window [app_id="xfce4-appfinder"] floating enable, resize set 600 600
+#set $menu xfce4-appfinder
+# for_window [app_id="xfce4-appfinder"] floating enable, resize set 600 600
+set $menu fuzzel --width=45 -f NotoSans:size=16 --background=000000bb --text-color=32D135ff --selection-color=32D135ff --selection-text-color=6c706cff --selection-match-color=000000ff --match-color=6c706cff --no-icons
 #set $menu tofi-drun --terminal=kitty | xargs swaymsg exec --
 #set $trun tofi-run | xargs swaymsg exec kitty --
 bindsym $mod+d exec $menu
