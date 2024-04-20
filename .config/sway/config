@@ -291,11 +291,9 @@ set $launch Launch (c)alculator, (f)search, (k)eyboard shortcuts, (m)edia now pl
 bindcode $mod+71, mode "$launch" 
 
 mode "$launch" {
-bindsym c exec rofi -show calc -modi calc -no-show-match -no-sort, mode "default" 
+bindsym c exec $term --class=qalc qalc, mode "default"
 bindsym f exec fsearch, mode "default"
-
-bindsym k exec $term nvim /mnt/d/GDrive/Documents/Files/i3-keyboard-shortcuts.txt, mode "default" 
-
+bindsym k exec $term --title=shortcuts less /mnt/d/GDrive/Documents/Files/i3-keyboard-shortcuts.txt, mode "default" 
 bindsym m exec $term sh ~/.local/bin/now-playing.sh, mode "default"
 
 # Go back to normal mode: Enter or Escape
