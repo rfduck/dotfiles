@@ -3,5 +3,7 @@
 --lives at .config/nvim/lua/plugins/ccc/init.lua
 
 return {
-    "uga-rosa/ccc.nvim",
+    'uga-rosa/ccc.nvim', 
+    lazy = false,
+    version = "1.7.2",
 }
