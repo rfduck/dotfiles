@@ -5,6 +5,8 @@
 #-----BASIC KEYS-----{{{
 
 #Set Mod key 
+# Mod1: Alt
+# Mod4: Win
 set $mod Mod4
 # (That's the Windows/Super key)
 
@@ -12,7 +14,7 @@ set $mod Mod4
 set $term kitty
 
 # kill focused window
-#bindsym $mod+Shift+q kill
+# bindsym $mod+Shift+q kill
 bindsym Mod1+q kill
 
 # reload the configuration file
@@ -248,29 +250,27 @@ bindsym $mod+Shift+d exec fsearch
 bindsym $mod+u exec $term --class=qalc qalc
 for_window [app_id="qalc"] floating enable, resize set 500 500
 
-#MEDIA PLAYER CONTROLS
+# KEYBOARD SHORTCUTS
+bindsym Mod1+k exec $term --title=shortcuts less /mnt/d/GDrive/Documents/Files/i3-keyboard-shortcuts.txt 
+for_window [title="shortcuts"] floating enable, resize set 600 800
+
+# MEDIA PLAYER CONTROLS
 bindsym XF86AudioPlay exec playerctl play-pause
 bindsym XF86AudioPause exec playerctl play-pause
 bindsym XF86AudioNext exec playerctl next
 bindsym XF86AudioPrev exec playerctl previous
 
-#BLUETOOTH MANAGER
+# BLUETOOTH MANAGER
 exec_always --no-startup-id blueman-applet
 
-#XSCREENSAVER
-#exec --no-startup-id xscreensaver
-
-#COLOR CONTROL
+# COLOR CONTROL
 exec_always --no-startup-id gammastep -m wayland -c /home/rfegles/.config/gammastep/config.ini
 
 #Full Screen Screenshot
 bindsym Print exec grim ~/Pictures/Screenshots/$(date '+%y%m%d_%H-%M-%S').png 
 
-#Screenshot a selected region
+ #Screenshot a selected region
 bindsym Shift+Print exec grim -g "$(slurp)" ~/Pictures/Screenshots/$(date '+%y%m%d_%H-%M-%S').png
-
-#FORCE KCOLORCHOOSER TO TILE
-for_window [class="kcolorchooser"] floating disable
 
 # NetworkManager is the most popular way to manage wireless networks on Linux,
 # and nm-applet is a desktop environment-independent system tray GUI for it.
@@ -287,7 +287,8 @@ bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOU
 
 #-----LAUNCH MODE-----{{{
 set $launch Launch (c)alculator, (f)search, (k)eyboard shortcuts, (m)edia now playing
-bindcode $mod+71, mode "$launch"
+# Key combo for launch mode is Mod+F5
+bindcode $mod+71, mode "$launch" 
 
 mode "$launch" {
 bindsym c exec rofi -show calc -modi calc -no-show-match -no-sort, mode "default" 
