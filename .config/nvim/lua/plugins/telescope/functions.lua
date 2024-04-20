@@ -17,7 +17,7 @@ end
 --Search my neovim config files
 function M.nvimconfig()
 require('telescope.builtin').find_files({
-    search_dirs = {"/home/rfegles/.config/nvim/"},
+    search_dirs = {"/home/rfegles/dotfiles/.config/nvim/"},
     prompt_title = "Search nvim config files",
     hidden = "true",
     layout_strategy = "vertical",
