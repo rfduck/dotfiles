@@ -42,7 +42,7 @@ alias vc=". ~/.local/bin/vc.sh" #Run vc.sh
 alias vcd=". ~/.local/bin/vcd.sh" #Run vcd.sh
 
 #OPENSUSE ZYPPER ALIASES
-alias zdup="sudo flatpak update -y && sudo zypper dup" #Update OpenSuse Tumbleweed and Flatpak
+alias zdup="flatpak --user update -y && sudo zypper dup" #Update OpenSuse Tumbleweed and Flatpak
 alias zi="sudo zypper in" #Install package on OpenSuse
 alias zr="sudo zypper ref" #Refresh Repositories on OpenSuse
 alias zs="zypper search" #Search zypper for available or installed packages"
