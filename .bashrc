@@ -47,8 +47,8 @@ source ~/fzf-tab-completion/bash/fzf-bash-completion.sh
 bind -x '"\t": fzf_bash_completion'
 
 #FZF FUNCTIONS
-#fd: CD to a specific subdirectory 
-fd() {
+#fdf: CD to a specific subdirectory 
+fdf() {
   local dir
   dir=$(find ${1:-.} -path '*/\.*' -prune \
                   -o -type d -print 2> /dev/null | fzf +m) &&
