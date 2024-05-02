@@ -190,6 +190,9 @@ font pango:Arial Regular 13
 # Border
 default_border pixel 3
 for_window [class="Google-chrome"] border normal
+for_window [app_id="Vivaldi-stable"] border normal
+for_window [app_id="libreoffice-calc"] border normal
+for_window [app_id="libreoffice-writer"] border normal
 
 # Colors
 # class                 border  backgr. text    indicator child_border
@@ -361,6 +364,8 @@ swaybar_command waybar
 # qt5ct
 # slurp
 # xfce4-appfinder
+
+# To find app id of window, run swaymsg -t get_tree in terminal
 
 # }}}
 
