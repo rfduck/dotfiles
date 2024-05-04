@@ -321,8 +321,8 @@ label:focus {
 }
 
 #scratchpad {
-    background: transparent;
-    color: #f53854;
+    background: #f53854;
+    color: #ffffff;
     /*text-shadow: 0px 0px 0px;*/
 }
 
