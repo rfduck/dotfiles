@@ -193,6 +193,8 @@ for_window [class="Google-chrome"] border normal
 for_window [app_id="Vivaldi-stable"] border normal
 for_window [app_id="libreoffice-calc"] border normal
 for_window [app_id="libreoffice-writer"] border normal
+for_window [app_id="mousepad"] border normal
+
 
 # Colors
 # class                 border  backgr. text    indicator child_border
