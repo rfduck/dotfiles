@@ -61,14 +61,14 @@ keymap('n', '<leader>sm', '<cmd>source ~/.config/nvim/init.lua') -- Source my in
 -- Telescope Pickers
 keymap('n', '<leader>fb', '<cmd>Telescope buffers<CR>') --buffers
 keymap('n', '<leader>fc', '<cmd>Telescope colorscheme<CR>') --color schemes
-keymap('n', '<leader>ff', '<cmd>lua require("plugins.telescope.functions").filedir()<CR>') --Files directory
+keymap('n', '<leader>ff', '<cmd>lua require("telescopefunctions").filedir()<CR>') --Files directory
 keymap('n', '<leader>fh', '<cmd>Telescope help_tags<CR>') --Help tags
 keymap('n', '<leader>fk', '<cmd>Telescope keymaps<CR>') --key mappings
-keymap('n', '<leader>fnv', '<cmd>lua require("plugins.telescope.functions").nvimconfig()<CR>') --Files in Nvim config
-keymap('n', '<leader>hd', '<cmd>lua require("plugins.telescope.functions").homedocs()<CR>') --Docs in Home
-keymap('n', '<leader>hf', '<cmd>lua require("plugins.telescope.functions").homefiles()<CR>') --Files in Home directory
-keymap('n', '<leader>mf', '<cmd>lua require("plugins.telescope.functions").myfiles()<CR>') --Files in GDrive
-keymap('n', '<leader>uk', '<cmd>lua require("plugins.telescope.functions").ukulele()<CR>') --Ukulele Songs
+keymap('n', '<leader>fnv', '<cmd>lua require("telescopefunctions").nvimconfig()<CR>') --Files in Nvim config
+keymap('n', '<leader>hd', '<cmd>lua require("telescopefunctions").homedocs()<CR>') --Docs in Home
+keymap('n', '<leader>hf', '<cmd>lua require("telescopefunctions").homefiles()<CR>') --Files in Home directory
+keymap('n', '<leader>mf', '<cmd>lua require("telescopefunctions").myfiles()<CR>') --Files in GDrive
+keymap('n', '<leader>uk', '<cmd>lua require("telescopefunctions").ukulele()<CR>') --Ukulele Songs
 
 -----VIFM-----
 keymap('n', '<leader>vf', '<cmd>Vifm<CR>') --Open and edit file
