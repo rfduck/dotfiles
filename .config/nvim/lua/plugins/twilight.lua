@@ -1,6 +1,5 @@
 --TWILIGHT CONFIG FILE
 --Default options for twilight plugin
---lives at .config/nvim/lua/plugins/twilight/init.lua
 
 return{
     'folke/twilight.nvim',
