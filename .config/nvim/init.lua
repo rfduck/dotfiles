@@ -23,7 +23,13 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 --require
-require("lazy").setup("plugins")
+require("lazy").setup({
+    spec = {
+        {
+            {import = 'plugins'},
+        }
+    }
+})
 
 -- Color Scheme
 vim.cmd([[colorscheme earendel]])
