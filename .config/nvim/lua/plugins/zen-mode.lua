@@ -1,6 +1,5 @@
 --zen-mode config
 --Settings for zen-mode plugin
---lives at .config/nvim/lua/plugins/zen-mode/init.lua
 
 return {
         "folke/zen-mode.nvim",
