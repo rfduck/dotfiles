@@ -72,7 +72,7 @@ keymap('n', '<leader>uk', '<cmd>lua require("telescopefunctions").ukulele()<CR>'
 
 -----VIFM-----
 keymap('n', '<leader>vf', '<cmd>Vifm<CR>') --Open and edit file
-keymap('n', '<leader>vv', '<cmd>VisplitVifm<CR>') --Open and edit file in vertical split
+keymap('n', '<leader>vv', '<cmd>VsplitVifm<CR>') --Open and edit file in vertical split
 keymap('n', '<leader>sv', '<cmd>SplitVifm<CR>') --Open and edit file in horizontal split
 
 ----------
