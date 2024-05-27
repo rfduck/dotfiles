@@ -34,6 +34,7 @@ alias imvr="find -regextype posix-extended -regex '.*\.(jpg|png)$' | shuf | imv-
 alias km="less /mnt/d/GDrive/Documents/Files/keychron-k8-pro-keymappings.txt"
 alias nv="nvim" #alias to run neovim
 alias scripts="ls -Ah -1 $HOME/.local/bin" 
+alias testsound="aplay ~/Music/gotmail.wav" #Test sound by playing "you've got mail" 
 alias tm="watch -t -n 1 date +%r" #Display current time
 alias tmd="watch -t -n 1 date +%c" #Display the time and date
 alias ttyc="tty-clock -bcst -C 6"
