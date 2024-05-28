@@ -109,6 +109,7 @@ fzf key bindings:
     Ctrl-t: Fuzzy find all files and subdirectories of the working directory, and output the selection to STDOUT
     Alt-c: Fuzzy find all subdirectories of the working directory and run the command "cd" with the output as argument
     Ctrl-r: Fuzzy find through your shell history, and output the selection to STDOUT
+    ** <TAB>: Use with a command to do a completion in the current directory
 
 gh: Github CLI program
     To update your personal token, run gh auth login in the proper repo, and paste your updated token copied to clipboard when prompted
