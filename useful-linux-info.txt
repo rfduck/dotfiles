@@ -105,6 +105,10 @@ feh: Image viewer
 find: Search file system contents
 fzf: Fuzzy-find anything on bash
 fzf-tab-completion: Make bash use fzf for tab completion
+fzf key bindings:
+    Ctrl-t: Fuzzy find all files and subdirectories of the working directory, and output the selection to STDOUT
+    Alt-c: Fuzzy find all subdirectories of the working directory and run the command "cd" with the output as argument
+    Ctrl-r: Fuzzy find through your shell history, and output the selection to STDOUT
 
 gh: Github CLI program
     To update your personal token, run gh auth login in the proper repo, and paste your updated token copied to clipboard when prompted
