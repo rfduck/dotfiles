@@ -13,7 +13,11 @@ return
         }, 
 
         winopts = {
-            preview = { layout = "vertical", vertical = "up:45%"},
+            preview = {
+                default = 'bat',
+                layout = "vertical",
+                vertical = "up:45%"
+            },
 
        },
 
