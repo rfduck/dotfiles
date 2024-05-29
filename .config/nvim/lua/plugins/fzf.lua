@@ -8,6 +8,10 @@ return
   config = function()
     -- calling `setup` is optional for customization
     require("fzf-lua").setup({
+        defaults = {
+            file_icons = false
+        }, 
+
         winopts = {
             preview = { layout = "vertical", vertical = "up:45%"},
 
