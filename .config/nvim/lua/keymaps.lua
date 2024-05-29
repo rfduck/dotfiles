@@ -73,15 +73,15 @@ keymap('n', '<leader>tuk', '<cmd>lua require("telescopefunctions").ukulele()<CR>
 -----FZF-LUA-----
 keymap('n', '<leader>fb', '<cmd>lua require("fzf-lua").buffers()<CR>', {desc = 'FZF buffers'})
 keymap('n', '<leader>fc', '<cmd>lua require("fzf-lua").colorschemes()<CR>', {desc = 'FZF colorschemes'})
-keymap('n', '<leader>ff', '<cmd>lua require("fzf-lua").files({cwd ="/mnt/d/GDrive/Documents/Files"})<CR>', {desc = 'FZF my files'})
+keymap('n', '<leader>ff', '<cmd>lua require("fzf-lua").files({cwd_prompt = false, prompt = "My Files: ", cwd ="/mnt/d/GDrive/Documents/Files"})<CR>', {desc = 'FZF my files'})
 keymap('n', '<leader>fh', '<cmd>lua require("fzf-lua").helptags()<CR>', {desc = 'FZF helptags'})
 keymap('n', '<leader>fk', '<cmd>lua require("fzf-lua").keymaps()<CR>', {desc = 'FZF keymaps'})
-keymap('n', '<leader>fnv', '<cmd>lua require("fzf-lua").files({cwd ="~/dotfiles/.config/nvim"})<CR>', {desc = 'FZF Neovim config files'})
-keymap('n', '<leader>hd', '<cmd>lua require("fzf-lua").files({cwd ="~/Documents"})<CR>', {desc = 'FZF Home Documents'})
-keymap('n', '<leader>hf', '<cmd>lua require("fzf-lua").files({cwd ="~"})<CR>', {desc = 'FZF All Home files'})
-keymap('n', '<leader>mf', '<cmd>lua require("fzf-lua").files({cwd ="/mnt/d/GDrive/Documents"})<CR>', {desc = 'FZF GDrive docs'})
-keymap('n', '<leader>uk', '<cmd>lua require("fzf-lua").files({cwd ="/mnt/d/GDrive/Documents/Ukulele/Songs"})<CR>', {desc = 'FZF Ukulele Songs'})
-keymap('n', '<leader>df', '<cmd>lua require("fzf-lua").files({cwd ="~/dotfiles"})<CR>', {desc = 'FZF dotfiles'})
+keymap('n', '<leader>fnv', '<cmd>lua require("fzf-lua").files({cwd_prompt = false, prompt="Nvim configs: ", cwd ="~/dotfiles/.config/nvim"})<CR>', {desc = 'FZF Neovim config files'})
+keymap('n', '<leader>hd', '<cmd>lua require("fzf-lua").files({cwd_prompt = false, prompt="Home Docs: ", cwd ="~/Documents"})<CR>', {desc = 'FZF Home Documents'})
+keymap('n', '<leader>hf', '<cmd>lua require("fzf-lua").files({cwd_prompt = false, prompt="All Home files: ", cwd ="~"})<CR>', {desc = 'FZF All Home files'})
+keymap('n', '<leader>mf', '<cmd>lua require("fzf-lua").files({cwd_prompt = false, prompt="GDrive Documents: ", cwd ="/mnt/d/GDrive/Documents"})<CR>', {desc = 'FZF GDrive docs'})
+keymap('n', '<leader>uk', '<cmd>lua require("fzf-lua").files({cwd_prompt = false, prompt="Ukulele songs: ", cwd ="/mnt/d/GDrive/Documents/Ukulele/Songs"})<CR>', {desc = 'FZF Ukulele Songs'})
+keymap('n', '<leader>df', '<cmd>lua require("fzf-lua").files({cwd_prompt = false, prompt="Dotfiles: ", cwd ="~/dotfiles"})<CR>', {desc = 'FZF dotfiles'})
 
 -----VIFM-----
 keymap('n', '<leader>vf', '<cmd>Vifm<CR>', {desc = 'Open and edit file in vifm'}) --Open and edit file
