@@ -28,4 +28,4 @@ require("lazy").setup({
 })
 
 -- Color Scheme
---vim.cmd([[colorscheme earendel]])
+--vim.cmd([[colorscheme ron]])
