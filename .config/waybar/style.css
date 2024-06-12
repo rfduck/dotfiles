@@ -60,8 +60,8 @@ button:hover {
     padding: 0 5px;
     margin: 2px 2px 2px 2px;
     border-radius: 9px;
-    background-color:#f53854;
-    color: white;
+    background-color:#ffffff;
+    color: #28C4DB;
     font-weight: normal;
     /*text-shadow: 0px 2px 2px black;*/
 }
@@ -71,13 +71,13 @@ button:hover {
 }
 
 #workspaces button.focused {
-    background-color: white;
-    color: #f53854;
+    background-color: transparent;
+    color: #ffffff;
     margin: 2px 2px 2px 2px;
     border-radius: 9px;
-    font-weight: 100;
+    font-weight: bold;
     /*text-shadow: 0px 0.5px 0.5px black;*/
-    box-shadow: inset 0 -3px #f53854;
+    /*box-shadow: inset 0 -3px #ffffff;*/
 }
 
 #workspaces button.urgent {
@@ -129,8 +129,8 @@ button:hover {
     border-radius: 9px;
     padding-left: 10px;
     padding-right: 7px;
-    background-color: #dc9ee1;
-    color: #f53854;
+    background-color: #ffffff;
+    color: #28c4db;
     font-weight: bold;
     /*text-shadow: 0px 0.5px 0.5px black;*/
 }
@@ -176,9 +176,9 @@ label:focus {
     border-radius: 9px;
     padding-left: 10px;
     padding-right: 7px;
-    background-color: #dc9ee1;
+    background-color: #ffffff;
     /*text-shadow: 0px 0.5px 0.5px black;*/
-    color: #f53854;
+    color: #28c4db;
     font-weight: bold;
 }
 
@@ -199,8 +199,8 @@ label:focus {
 }
 
 #pulseaudio {
-    color: #ffffff;
-    background-color: #6273c1;
+    color: #28c4db;
+    background-color: #ffffff;
     /*text-shadow: 0px 0.5px 0.5px black; */
     font-weight: bold ;
     margin-top: 5px;
@@ -215,8 +215,8 @@ label:focus {
     border-radius: 9px;
     padding-left: 10px;
     padding-right: 7px;
-    color: #ffffff;
-    background-color: #6273c1;
+    color: #28c4db;
+    background-color: #ffffff;
 }
 
 #pulseaudio.muted {
@@ -321,8 +321,8 @@ label:focus {
 }
 
 #scratchpad {
-    background: #f53854;
-    color: #ffffff;
+    background: #ffffff;
+    color: #28c4db;
     border-radius: 9px;
     margin: 2px 2px 2px 2px; 
     /*text-shadow: 0px 0px 0px;*/
