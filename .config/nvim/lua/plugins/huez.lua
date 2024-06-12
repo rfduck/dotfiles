@@ -7,6 +7,8 @@ return {
     branch = "stable",
     event = "UIEnter",
     config = function()
-        require("huez").setup({})
+        require("huez").setup({
+        exclude = { "base16" },
+        })
     end,
 }
