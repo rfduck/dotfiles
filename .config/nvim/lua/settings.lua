@@ -27,7 +27,6 @@ o.showmode = true -- Show the mode
 o.smartcase = true -- Override ignore case when upper case letter is explicitly used
 o.splitbelow = true -- Splits open below current buffer
 o.splitright = true -- Splits open to right of current buffer
-o.termguicolors = false -- Terminal GUI colors, neovim uses this by default now
 o.wildmenu = true -- Enhanced command line completion
 o.wrap = true -- Set line wrapping
 
