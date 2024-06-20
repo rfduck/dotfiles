@@ -251,6 +251,9 @@ bindsym $mod+d exec $menu
 bindsym $mod+Shift+d exec fsearch
 # bindsym $mod+Ctrl+d exec $trun
 
+# NOTIFICATIONS
+exec mako
+
 # CALCULATOR
 bindsym $mod+u exec $term --class=qalc qalc
 for_window [app_id="qalc"] floating enable, resize set 500 500
@@ -360,9 +363,11 @@ swaybar_command waybar
 # imv
 # kitty (terminal)
 # lxappearance
+# mako (notifications)
 # nm-applet
 # pamixer
 # playerctl
+# qalculate
 # qt5ct
 # slurp
 # xfce4-appfinder
