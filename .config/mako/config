@@ -1,0 +1,18 @@
+#MAKO CONFIGURATION FILE
+
+#STYLE AND COLORS
+font=Arial 12
+background-color=#52DAE8FF
+text-color=#FFFFFFff
+border-size=3
+border-color=#FFFFFFff
+width=400
+
+#set timeout to 6 seconds
+default-timeout=6000
+
+#make all notifications use the default timeout
+ignore-timeout=1
+
+#where the notification will appear
+anchor=bottom-center
