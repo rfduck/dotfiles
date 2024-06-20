@@ -45,7 +45,7 @@ keymap('n', '<BS>', '<NOP>', {desc = 'Turn off backspace in normal mode'}) -- Tu
 --
 ------CUSTOM MAPPINGS-----
 --
-keymap('n', '<leader>d', '----------------------------------<CR>o', {desc = 'Divider'}) --Inserting divider
+keymap('n', '<leader>d', 'i----------------------------------<CR>', {desc = 'Divider'}) --Inserting divider
 
 keymap('n', '<leader>mm', '<cmd>split<CR><cmd>view ~/Documents/my-vim-mappings.txt<CR>', {desc = 'View my vim mappings in a split'}) -- View my vim mappings in a split
 
