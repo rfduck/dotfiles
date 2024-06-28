@@ -178,7 +178,7 @@ sha256sum -c NAMEOFCHECKSUMFILE
 
 If the output reads 'OK', you're good to go. 
 
-TO CREATE BOOTABLE USB USING DD
+TO CREATE BOOTABLE USB USING DD:
 
 1. Download a Linux distribution .iso file and put it somewhere convenient.
 2. Make sure USB drive is plugged in by running lsblk in terminal. Note the name of the device (e.g. /dev/sdd)
@@ -192,5 +192,10 @@ sudo dd if=/path/to/linux/iso of=/dev/nameofusbdevice bs=4M status=progress
 
 Make sure to use WHOLE device for output, not just a partition of it. E.g. /dev/sdx, NOT /dev/sdx1 
 
-TO SET HOSTNAME
+TO SET HOSTNAME:
 sudo hostnamectl set-hostname HOSTNAME
+
+TO CHECK SSD HEALTH:
+Run sudo smartctl -H /name/of/SSD
+
+For extended information, run sudo smartctl -x /name/of/SSD
